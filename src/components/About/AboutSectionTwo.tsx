@@ -31,7 +31,13 @@ const AboutSectionTwo = () => {
                   Our History
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Founded by Dr. Ismail, ChiralityAI began with a strong foundation in physical chemistry and an entrepreneurial spirit. Identifying gaps in the industry, we implemented innovative solutions and automated models to anticipate and address potential issues in real-time. Our journey has been marked by growth and success, driven by our expertise in data analysis and technological innovation.
+                  Founded by Dr. Ismail, ChiralityAI began with a strong
+                  foundation in physical chemistry and an entrepreneurial
+                  spirit. Identifying gaps in the industry, we implemented
+                  innovative solutions and automated models to anticipate and
+                  address potential issues in real-time. Our journey has been
+                  marked by growth and success, driven by our expertise in data
+                  analysis and technological innovation.
                 </p>
               </div>
               <div className="mb-9">
@@ -39,7 +45,11 @@ const AboutSectionTwo = () => {
                   Our Belief
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  We believe in the power of scientific curiosity and the trial-and-error method. This approach allows us to quickly test and refine ideas, saving time and costs for our clients. Our commitment to innovation drives us to continuously learn and improve, ensuring we deliver the best AI solutions.
+                  We believe in the power of scientific curiosity and the
+                  trial-and-error method. This approach allows us to quickly
+                  test and refine ideas, saving time and costs for our clients.
+                  Our commitment to innovation drives us to continuously learn
+                  and improve, ensuring we deliver the best AI solutions.
                 </p>
               </div>
               <div className="mb-1">
@@ -48,12 +58,12 @@ const AboutSectionTwo = () => {
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Our guiding principles are:
-                  <ul>
-                    <li>Try, fail, and improve until you succeed.</li>
-                    <li>Continuously experiment and learn.</li>
-                    <li>Act quickly to cut costs and drive efficiency.</li>
-                  </ul>
                 </p>
+                <ul className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                  <li>Try, fail, and improve until you succeed.</li>
+                  <li>Continuously experiment and learn.</li>
+                  <li>Act quickly to cut costs and drive efficiency.</li>
+                </ul>
               </div>
             </div>
           </div>

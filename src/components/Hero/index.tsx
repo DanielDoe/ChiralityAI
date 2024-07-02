@@ -15,11 +15,15 @@ const Hero = () => {
                   Cutting-Edge AI Solutions for Diverse Industries
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  ChiralityAI provides advanced AI-driven tools and insights to revolutionize operational efficiency, safety, and sustainability across various industries. Explore our innovative solutions designed to meet the unique challenges of today's dynamic market.
+                  ChiralityAI provides advanced AI-driven tools and insights to
+                  revolutionize operational efficiency, safety, and
+                  sustainability across various industries. Explore our
+                  innovative solutions designed to meet the unique challenges of
+                  today&apos;s dynamic market.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/solutions"
+                    href="/solution"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Discover Our Solutions
@@ -37,12 +41,12 @@ const Hero = () => {
         </div>
 
         <div
-          className="absolute right-0 top-0 z-[-1] dark:opacity-10 opacity-30 lg:opacity-100 bg-no-repeat bg-cover bg-center w-[25%] h-[75%]"
+          className="absolute right-0 top-0 z-[-1] h-[75%] w-[25%] bg-cover bg-center bg-no-repeat opacity-30 dark:opacity-10 lg:opacity-100"
           style={{ backgroundImage: `url(/images/background.png)` }}
         />
 
         <div
-          className="absolute bottom-0 left-0 z-[-1] dark:opacity-10 opacity-30 lg:opacity-100 bg-no-repeat bg-cover bg-center w-[25%] h-[75%] rotate-180"
+          className="absolute bottom-0 left-0 z-[-1] h-[75%] w-[25%] rotate-180 bg-cover bg-center bg-no-repeat opacity-30 dark:opacity-10 lg:opacity-100"
           style={{ backgroundImage: `url(/images/background.png)` }}
         />
       </section>
