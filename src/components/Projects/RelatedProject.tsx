@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const RelatedPost = ({
+const RelatedProject = ({
   image,
   slug,
   title,
@@ -34,4 +34,4 @@ const RelatedPost = ({
   );
 };
 
-export default RelatedPost;
+export default RelatedProject;

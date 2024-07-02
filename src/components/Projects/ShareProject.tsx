@@ -1,4 +1,4 @@
-const SharePost = () => {
+const ShareProject = () => {
   return (
     <>
       <a
@@ -57,4 +57,4 @@ const SharePost = () => {
   );
 };
 
-export default SharePost;
+export default ShareProject;

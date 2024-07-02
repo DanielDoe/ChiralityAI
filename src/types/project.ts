@@ -1,15 +1,13 @@
-type Author = {
-  name: string;
-  image: string;
-  designation: string;
-};
-
-export type Project = {
+export interface Project {
   id: number;
   title: string;
   paragraph: string;
   image: string;
-  author: Author;
+  author: {
+    name: string;
+    image: string;
+    designation: string;
+  };
   tags: string[];
   publishDate: string;
-};
+}

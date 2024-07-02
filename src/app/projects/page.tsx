@@ -1,5 +1,5 @@
-import SingleProject from "@/components/Project/SingleProject";
-import projectData from "@/components/Project/projectData";
+import SingleProject from "@/components/Projects/SingleProject";
+import projectData from "@/components/Projects/projectData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const Projects = () => {
+const Project = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Project Grid"
+        pageName="Project Highlights"
         description="Explore our innovative AI projects and how they are transforming various industries."
       />
 
@@ -96,4 +96,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;
