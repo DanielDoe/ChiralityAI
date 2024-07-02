@@ -14,8 +14,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="About Us"
+        description="ChiralityAI is at the forefront of AI innovation, providing advanced solutions to enhance operational efficiency, safety, and sustainability across various industries. Our expertise in artificial intelligence empowers businesses to tackle complex challenges and achieve their goals with precision and confidence."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

@@ -1,47 +1,89 @@
-import { Blog } from "@/types/blog";
+import { Project } from "@/types/project";
 
-const blogData: Blog[] = [
+const projectData: Project[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Predictive Maintenance for Manufacturing",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-01.jpg",
+      "Utilizing AI algorithms to predict equipment failures and optimize maintenance schedules, reducing downtime and costs in manufacturing plants.",
+    image: "/images/projects/project-01.jpg",
     author: {
-      name: "Samuyl Joshi",
-      image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      name: "Alex Johnson",
+      image: "/images/projects/author-01.png",
+      designation: "AI Engineer",
     },
-    tags: ["creative"],
+    tags: ["maintenance", "manufacturing"],
     publishDate: "2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "AI-Powered Supply Chain Optimization",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-02.jpg",
+      "Implementing AI solutions to streamline supply chain processes, enhance logistics, and improve inventory management for retail businesses.",
+    image: "/images/projects/project-02.jpg",
     author: {
-      name: "Musharof Chy",
-      image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      name: "Emma Williams",
+      image: "/images/projects/author-02.png",
+      designation: "Data Scientist",
     },
-    tags: ["computer"],
+    tags: ["supply chain", "retail"],
     publishDate: "2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Smart City Traffic Management",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: "/images/blog/blog-03.jpg",
+      "Developing AI-driven traffic management systems to alleviate congestion, reduce emissions, and improve urban mobility in smart cities.",
+    image: "/images/projects/project-03.jpg",
     author: {
-      name: "Lethium Deo",
-      image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      name: "Michael Brown",
+      image: "/images/projects/author-03.png",
+      designation: "Software Developer",
     },
-    tags: ["design"],
+    tags: ["smart city", "transportation"],
+    publishDate: "2025",
+  },
+  {
+    id: 4,
+    title: "Personalized Healthcare Recommendations",
+    paragraph:
+      "Creating AI-based tools to provide personalized healthcare recommendations and improve patient outcomes through data-driven insights.",
+    image: "/images/projects/project-04.jpg",
+    author: {
+      name: "Sophia Lee",
+      image: "/images/projects/author-04.png",
+      designation: "Health Data Analyst",
+    },
+    tags: ["healthcare", "personalization"],
+    publishDate: "2025",
+  },
+  {
+    id: 5,
+    title: "Autonomous Vehicle Navigation",
+    paragraph:
+      "Building advanced AI models to enhance the navigation and safety systems of autonomous vehicles, ensuring reliable and efficient transportation.",
+    image: "/images/projects/project-05.jpg",
+    author: {
+      name: "Liam Davis",
+      image: "/images/projects/author-05.png",
+      designation: "Robotics Engineer",
+    },
+    tags: ["autonomous vehicles", "navigation"],
+    publishDate: "2025",
+  },
+  {
+    id: 6,
+    title: "AI-Enhanced Customer Support",
+    paragraph:
+      "Deploying AI-powered chatbots and virtual assistants to improve customer support services, offering quick and accurate responses to inquiries.",
+    image: "/images/projects/project-06.jpg",
+    author: {
+      name: "Olivia Martinez",
+      image: "/images/projects/author-06.png",
+      designation: "Customer Support Specialist",
+    },
+    tags: ["customer support", "automation"],
     publishDate: "2025",
   },
 ];
-export default blogData;
+export default projectData;
