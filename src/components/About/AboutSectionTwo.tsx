@@ -28,31 +28,29 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Our History
+                  Bug free code
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Founded by Dr. Ismail, ChiralityAI began with a strong foundation in physical chemistry and an entrepreneurial spirit. Identifying gaps in the industry, we implemented innovative solutions and automated models to anticipate and address potential issues in real-time. Our journey has been marked by growth and success, driven by our expertise in data analysis and technological innovation.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Our Belief
+                  Premier support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  We believe in the power of scientific curiosity and the trial-and-error method. This approach allows us to quickly test and refine ideas, saving time and costs for our clients. Our commitment to innovation drives us to continuously learn and improve, ensuring we deliver the best AI solutions.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Our Principles
+                  Next.js
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Our guiding principles are:
-                  <ul>
-                    <li>Try, fail, and improve until you succeed.</li>
-                    <li>Continuously experiment and learn.</li>
-                    <li>Act quickly to cut costs and drive efficiency.</li>
-                  </ul>
+                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
+                  consectetur adipiscing elit setim.
                 </p>
               </div>
             </div>
