@@ -10,36 +10,44 @@ export const metadata: Metadata = {
 
 const SERVICES_CONTENT = [
   {
-    title: "Exploration and drilling",
+    title: "Engineering Support",
     description:
-      "This service involves finding and drilling new oil and gas reserves.",
+      "We cover the full spectrum: drilling & completions, performance, workovers and well interventions, rig acceptance and commissioning, well testing, from cost estimates to real time execution support.",
+    image: "/images/services/number-1.png",
   },
   {
-    title: "Production and refining",
+    title: "Carbon Footprint Reduction",
     description:
-      "This service involves processing crude oil into refined products such as gasoline, diesel fuel.",
+      "Collect and analyse your emission data with a custom app. Making federally regulated environmental reporting a breeze. View trends to enable decision making for carbon footprint reduction.",
+    image: "/images/services/number-2.png",
   },
   {
-    title: "Transport and logistics",
+    title: "Literature Research",
     description:
-      "Moving oil and gas safely and efficiently from production sites to distribution centers.",
+      "Stay updated with the latest emerging technologies. Gain insight on new open-source software used for calculating plant outputs. Remain informed of market trends.",
+    image: "/images/services/number-3.png",
   },
   {
-    title: "Equipment and services",
+    title: "Apps",
     description:
-      "Supplying essential equipment and services to the oil and gas industry.",
+      "Shift from spreadsheet reporting to an all-in-one app. Collect data efficiently from the field, store it in a database and analyse it through dashboards. Automate maintenance schedules and make more informed decisions.",
+    image: "/images/services/number-4.png",
   },
   {
-    title: "Environmental services",
+    title: "Models",
     description:
-      "Minimization the environmental impact of oil and gas operations.",
+      "Use our prebuilt models for well production estimation, methanol calculation, pigging scheduling, scaling, corrosion, and more. We can also build a custom model to simulate any engineering or chemical process.",
+    image: "/images/services/number-5.png",
   },
   {
-    title: "Renewable energy",
+    title: "Data Historian",
     description:
-      "Investing in and developing renewable energy sources to reduce reliance on fossil fuels.",
+      "We will help you set up and maintain a time series database built for industrial automation. Count on us to normalize your data across different facilities, create a tag nomenclature and perform calculations with custom views.",
+    image: "/images/services/number-6.png",
   },
 ];
+
+
 
 const ServicePage = () => {
   return (
@@ -102,21 +110,105 @@ const ServicePage = () => {
                   key={service.title}
                   className="inline-flex flex-col items-center justify-center gap-4 rounded-3xl bg-[#F5F7F9] p-10 shadow-sm"
                 >
-                  <span className="h-20 w-20 rounded-full bg-primary" />
+                  <div
+                    className="h-20 w-20 rounded-full"
+                    style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    role="img"
+                    aria-label="service icon"
+                  />
                   <p className="text-lg font-bold">{service.title}</p>
                   <p className="text-center">{service.description}</p>
                 </li>
               );
             })}
-            {/* <div className="rounded bg-white p-4 shadow">Item 1</div>
-            <div className="rounded bg-white p-4 shadow">Item 2</div>
-            <div className="rounded bg-white p-4 shadow">Item 3</div>
-            <div className="rounded bg-white p-4 shadow">Item 4</div>
-            <div className="rounded bg-white p-4 shadow">Item 5</div>
-            <div className="rounded bg-white p-4 shadow">Item 6</div> */}
           </ul>
         </div>
       </section>
+      <section className="py-16 md:py-20 lg:py-28">
+        <div className="container mx-auto">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start">
+                <div className="w-1/2 p-2">
+                  <div
+                    className="relative aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow-lg"
+                    style={{
+                      backgroundImage: `url('/images/services/why-us-1.jpg')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }}
+                    role="img"
+                    aria-label="Placeholder image 1"
+                  ></div>
+                </div>
+                <div className="w-1/2 p-2">
+                  <div
+                    className="relative aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow-lg"
+                    style={{
+                      backgroundImage: `url('/images/services/why-us-2.jpg')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }}
+                    role="img"
+                    aria-label="Placeholder image 2"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="lg:ml-12">
+                <div className="text-center lg:text-left">
+                  <h2 className="text-left font-bold uppercase tracking-wide text-primary">
+                    WHY US
+                  </h2>
+                  <h3 className=" text-left mt-4 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl lg:text-4xl">
+                    We're constantly pushing the boundaries
+                  </h3>
+                  <p className=" text-left mt-4 text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg lg:text-xl">
+                    At ChiralityAI, we’re committed to delivering excellence across various industries. With our state-of-the-art technology and advanced processes, we’re able to provide innovative solutions to meet the evolving needs of our clients worldwide.
+                  </p>
+                </div>
+                <div className="mt-8 flex justify-center lg:justify-start">
+                  <div className="mr-8 text-center lg:text-left">
+                    <h4 className="text-3xl font-bold text-primary">20+</h4>
+                    <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                      Years on market
+                    </p>
+                  </div>
+                  <div className="mr-8 text-center lg:text-left">
+                    <h4 className="text-3xl font-bold text-primary">3K+</h4>
+                    <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                      Big projects
+                    </p>
+                  </div>
+                  <div className="text-center lg:text-left">
+                    <h4 className="text-3xl font-bold text-primary">60+</h4>
+                    <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                      Trusted partners
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative py-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/images/services/why-us-1.jpg')` }}>
+      <div className="container mx-auto text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            From the well to the pump, we've got you covered
+          </h2>
+          <p className="mb-8 text-lg leading-relaxed text-white sm:text-xl">
+            We look forward to partnering with you and delivering excellence in the oil industry.
+          </p>
+          <a href="/contact" className="inline-block px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-full hover:bg-orange-600">
+            Contact us
+          </a>
+        </div>
+      </div>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+    </section>
     </>
   );
 };

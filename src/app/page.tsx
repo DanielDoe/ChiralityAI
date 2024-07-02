@@ -11,8 +11,8 @@ import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ChiralityAI",
-  description: "This is Home for ChiralityAI & Research",
+  title: "Chirality Research Inc.",
+  description: "This is Home for Chirality AI & Research",
   // other metadata
 };
 
