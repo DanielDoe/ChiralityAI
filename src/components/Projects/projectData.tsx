@@ -13,7 +13,7 @@ const projectData: Project[] = [
       designation: "AI Engineer",
     },
     tags: ["maintenance", "manufacturing"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projectData: Project[] = [
       designation: "Data Scientist",
     },
     tags: ["supply chain", "retail"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 3,
@@ -37,11 +37,11 @@ const projectData: Project[] = [
     image: "/images/projects/project-03.jpg",
     author: {
       name: "Michael Brown",
-      image: "/images/projects/author-03.png",
+      image: "/images/projects/author-01.png",
       designation: "Software Developer",
     },
     tags: ["smart city", "transportation"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 4,
@@ -51,11 +51,11 @@ const projectData: Project[] = [
     image: "/images/projects/project-04.jpg",
     author: {
       name: "Sophia Lee",
-      image: "/images/projects/author-04.png",
+      image: "/images/projects/author-02.png",
       designation: "Health Data Analyst",
     },
     tags: ["healthcare", "personalization"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 5,
@@ -65,11 +65,11 @@ const projectData: Project[] = [
     image: "/images/projects/project-05.jpg",
     author: {
       name: "Liam Davis",
-      image: "/images/projects/author-05.png",
+      image: "/images/projects/author-01.png",
       designation: "Robotics Engineer",
     },
     tags: ["autonomous vehicles", "navigation"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
   {
     id: 6,
@@ -79,11 +79,11 @@ const projectData: Project[] = [
     image: "/images/projects/project-06.jpg",
     author: {
       name: "Olivia Martinez",
-      image: "/images/projects/author-06.png",
+      image: "/images/projects/author-02.png",
       designation: "Customer Support Specialist",
     },
     tags: ["customer support", "automation"],
-    publishDate: "2025",
+    publishDate: "2024",
   },
 ];
 export default projectData;
