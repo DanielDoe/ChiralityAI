@@ -8,6 +8,12 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
+import InsightsSection from "@/components/Insight/InsightsSection";
+import EnergySectorExpertise from '@/components/Sector/EnergySectorExpertise';
+import ReportSection from '@/components/Report/ReportSection'; 
+import OilGasExperience from '@/components/Experience/OilGasExperience';
+import ClientResultsSection from '@/components/Clients/ClientResultsSection';
+import TeamSection from '@/components/Teams/TeamSection';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,12 +28,16 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
+      <OilGasExperience />
       <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <ClientResultsSection />
+      <TeamSection />
       <Testimonials />
+      <ReportSection />
+      <InsightsSection />
+      <EnergySectorExpertise />
+      <AboutSectionOne />
       <Projects />
-      <Blog />
       <Contact />
     </>
   );

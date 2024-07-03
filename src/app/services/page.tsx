@@ -58,7 +58,7 @@ const ServicePage = () => {
             What we do
           </p>
           <h1 className="mx-auto mb-5 max-w-[48rem] text-center text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-            We&apos;re more than just an energy company.
+            We&apos;re more than just an Oil & Gas Consultancy.
           </h1>
         </div>
 
