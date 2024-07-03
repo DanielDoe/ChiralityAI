@@ -55,7 +55,7 @@ const ClientResultsDetails = () => {
 
         <div className="mb-8 flex items-center">
           <span className="mr-4">Selected:</span>
-          <button className="rounded bg-red-600 px-4 py-2 text-white">
+          <button className="rounded bg-primary px-4 py-2 text-white">
             {selectedCategory}{" "}
             <span
               className="ml-2 cursor-pointer"
@@ -79,7 +79,7 @@ const ClientResultsDetails = () => {
                 aria-label="Client Result Image"
               ></div>
               <div className="p-6">
-                <p className="mb-2 font-semibold text-red-600">
+                <p className="mb-2 font-semibold text-primary">
                   {result.category}
                 </p>
                 <h3 className="mb-4 text-xl font-bold text-black">

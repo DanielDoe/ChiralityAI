@@ -6,7 +6,10 @@ const SingleProject = ({ project }: { project: Project }) => {
   const { title, image, paragraph, author, tags, publishDate } = project;
   return (
     <>
-      <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark" style={{margin:"1rem auto"}}>
+      <div
+        className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark"
+        style={{ margin: "1rem auto" }}
+      >
         <Link
           href="/project-details"
           className="relative block aspect-[37/22] w-full"
@@ -14,7 +17,7 @@ const SingleProject = ({ project }: { project: Project }) => {
           <span className="absolute right-6 top-6 z-20 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold capitalize text-white">
             {tags[0]}
           </span>
-          <Image src={image} alt="image" fill/>
+          <Image src={image} alt="image" fill objectFit="cover" />
         </Link>
         <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
           <h3>
@@ -25,7 +28,7 @@ const SingleProject = ({ project }: { project: Project }) => {
               {title}
             </Link>
           </h3>
-          <p className="mb-6 border-b border-body-color border-opacity-10 pb-6 text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
+          <p className="mb-6 line-clamp-4 border-b border-body-color border-opacity-10 pb-6 text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
             {paragraph}
           </p>
           <div className="flex items-center">

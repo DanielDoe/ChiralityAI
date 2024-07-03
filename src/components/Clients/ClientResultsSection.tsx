@@ -8,7 +8,7 @@ const ClientResultsSection = () => {
       description:
         "We helped build plans, launch, and set ambitious targets for this independent entity.",
       category: "Energy & Natural Resources",
-      image: "/images/client-results-1.jpg",
+      image: "/images/services/why-us-1.jpg",
       type: "Brief",
     },
     {
@@ -16,7 +16,7 @@ const ClientResultsSection = () => {
       description:
         "We helped OilCo shift from a geocentric model to a global model. The new, centralized organization was implemented ahead of schedule and with minimal disruption to the business.",
       category: "Oil & Gas",
-      image: "/images/client-results-2.jpg",
+      image: "/images/services/why-us-2.jpg",
       type: "Report",
     },
     {
@@ -24,7 +24,7 @@ const ClientResultsSection = () => {
       description:
         "As competitive projects ramp up worldwide, here are five keys to developing successful bids.",
       category: "Advanced Manufacturing & Services",
-      image: "/images/client-results-3.jpg",
+      image: "/images/services/why-us-1.jpg",
       type: "Infographic",
     },
   ];
@@ -51,7 +51,7 @@ const ClientResultsSection = () => {
                 aria-label="Client Result Image"
               ></div>
               <div className="p-6">
-                <p className="mb-2 font-semibold text-red-600">
+                <p className="mb-2 font-semibold text-primary">
                   {result.category}
                 </p>
                 <h3 className="mb-4 text-xl font-bold text-black">
@@ -82,7 +82,7 @@ const ClientResultsSection = () => {
         </div>
         <div className="mt-12 text-center">
           <Link href="/client-results">
-            <span className="inline-block rounded bg-red-600 px-6 py-3 font-semibold text-white">
+            <span className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white">
               SEE MORE
             </span>
           </Link>

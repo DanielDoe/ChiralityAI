@@ -1,25 +1,31 @@
-import React from 'react';
+import React from "react";
 
 const ReportSection = () => {
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto">
-        <div className="bg-white border border-gray-300 rounded-lg shadow-lg flex items-center relative overflow-hidden">
-          <div className="flex-1 p-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+        <div className="relative flex w-full flex-row items-center justify-center rounded-lg border border-gray-300 bg-white shadow-lg">
+          <div className="h-72 p-8" style={{ flex: 2 }}>
+            <h2 className="mb-4 text-2xl font-bold text-black md:text-3xl">
               Energy & Natural Resources Report 2023
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mb-8">
-              Our annual report examines how companies are seizing the once-in-a-generation opportunities of the energy transition.
+            <p className="mb-8 text-base text-gray-600 md:text-lg">
+              Our annual report examines how companies are seizing the
+              once-in-a-generation opportunities of the energy transition.
             </p>
-            <a href="#" className="inline-block bg-red-600 text-white font-semibold py-3 px-6 rounded">
+            <a
+              href="#"
+              className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white"
+            >
               READ THE REPORT
             </a>
           </div>
-          <div className="flex-1 h-full">
+          <div className="h-72 flex-1">
             <div
-              className="h-full bg-cover bg-center rounded-r-lg"
-              style={{ backgroundImage: `url('/images/services/why-us-1.jpg')`, width: '80%', height: '100%' }}
+              className="h-full w-full rounded-r-lg bg-cover bg-center"
+              style={{
+                backgroundImage: `url('/images/services/why-us-1.jpg')`,
+              }}
               role="img"
               aria-label="Energy Report Image"
             />
