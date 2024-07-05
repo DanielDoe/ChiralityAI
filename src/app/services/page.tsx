@@ -106,7 +106,7 @@ const ServicePage = () => {
               return (
                 <li
                   key={service.title}
-                  className="inline-flex flex-col items-center justify-center gap-4 rounded-3xl bg-[#F5F7F9] p-10 shadow-sm"
+                  className="inline-flex flex-col items-center justify-center gap-4 rounded-3xl bg-[#F5F7F9] p-10 shadow-sm dark:bg-bg-color-dark"
                 >
                   <div
                     className="h-20 w-20 rounded-full"
@@ -118,12 +118,8 @@ const ServicePage = () => {
                     role="img"
                     aria-label="service icon"
                   />
-                  <p className="text-lg font-bold dark:text-black">
-                    {service.title}
-                  </p>
-                  <p className="text-center dark:text-black">
-                    {service.description}
-                  </p>
+                  <p className="text-lg font-bold ">{service.title}</p>
+                  <p className="text-center ">{service.description}</p>
                 </li>
               );
             })}
@@ -134,12 +130,12 @@ const ServicePage = () => {
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-1/2">
-              <div className="flex flex-wrap items-center justify-center lg:justify-start">
-                <div className="w-1/2 p-2">
+              <div className="relative flex h-96 flex-wrap items-center justify-center lg:justify-start">
+                <div className="h-full w-1/2 p-2">
                   <div
-                    className="aspect-w-4 aspect-h-3 relative overflow-hidden rounded-lg shadow-lg"
+                    className="relative aspect-video h-[70%] w-full overflow-hidden rounded-lg shadow-lg"
                     style={{
-                      backgroundImage: `url('/images/services/why-us-1.jpg')`,
+                      backgroundImage: `url(/images/services/why-us-1.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}
@@ -147,11 +143,11 @@ const ServicePage = () => {
                     aria-label="Placeholder image 1"
                   ></div>
                 </div>
-                <div className="w-1/2 p-2">
+                <div className="inline-flex h-full w-1/2 items-end justify-end p-2">
                   <div
-                    className="aspect-w-4 aspect-h-3 relative overflow-hidden rounded-lg shadow-lg"
+                    className="relative aspect-video h-[70%] w-full overflow-hidden rounded-lg shadow-lg"
                     style={{
-                      backgroundImage: `url('/images/services/why-us-2.jpg')`,
+                      backgroundImage: `url(/images/services/why-us-2.jpg)`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}

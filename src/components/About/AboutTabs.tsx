@@ -8,21 +8,21 @@ const AboutTabs = () => {
     <div>
       {/* Section 2: Tabs */}
       <div className="container mx-auto py-16">
-        <div className="mb-8 flex justify-around border-b-2 border-gray-300">
+        <div className="mb-8 flex justify-around border-b-2 border-gray-300 dark:border-gray-700">
           <button
-            className={`px-4 py-2 font-medium ${activeTab === "mission" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
+            className={`px-4 py-2 text-xl font-medium ${activeTab === "mission" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
             onClick={() => setActiveTab("mission")}
           >
             Our Mission
           </button>
           <button
-            className={`px-4 py-2 font-medium ${activeTab === "vision" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
+            className={`px-4 py-2 text-xl font-medium ${activeTab === "vision" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
             onClick={() => setActiveTab("vision")}
           >
             Our Vision
           </button>
           <button
-            className={`px-4 py-2 font-medium ${activeTab === "history" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
+            className={`px-4 py-2 text-xl font-medium ${activeTab === "history" ? "border-b-4 border-primary text-primary" : "text-gray-600"}`}
             onClick={() => setActiveTab("history")}
           >
             Our History
@@ -34,7 +34,9 @@ const AboutTabs = () => {
               <div
                 className="h-96 w-96 rounded-md"
                 style={{
-                  backgroundImage: `url('/images/about/2922242_26964.jpg')`,
+                  backgroundImage: `url(/images/about/2922242_26964.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
                 role="img"
                 aria-label="Mission Image"
@@ -57,6 +59,8 @@ const AboutTabs = () => {
                 className="h-96 w-96 rounded-md"
                 style={{
                   backgroundImage: `url('/images/about/27304920_na_april_14.jpg')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
                 role="img"
                 aria-label="Vision Image"
@@ -78,6 +82,8 @@ const AboutTabs = () => {
                 className="h-96 w-96 rounded-md"
                 style={{
                   backgroundImage: `url('/images/about/2148456078.jpg')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
                 role="img"
                 aria-label="Histroy Image"

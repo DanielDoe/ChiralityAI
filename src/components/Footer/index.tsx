@@ -10,10 +10,10 @@ const Footer = () => {
             <div className="mb-12 lg:mb-16">
               <Link
                 href="/"
-                className="header-logo block w-full mb-8 inline-flex flex-row items-center gap-2 text-lg"
+                className="header-logo mb-8 block inline-flex w-full flex-row items-center gap-2 text-lg"
               >
                 <div
-                  className="w-8 h-8"
+                  className="h-8 w-8"
                   style={{
                     backgroundImage: `url(/images/logo/chirality_research_inc__logo.jpg)`,
                     backgroundPosition: "center",
@@ -25,7 +25,9 @@ const Footer = () => {
                 <p className="font-semibold">Chirality Research Inc.</p>
               </Link>
               <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Chirality Research Inc. provides cutting-edge AI solutions to revolutionize various industries with a focus on innovation and excellence.
+                Chirality Research Inc. provides cutting-edge AI solutions to
+                revolutionize various industries with a focus on innovation and
+                excellence.
               </p>
               <div className="flex items-center space-x-4">
                 <a
@@ -125,7 +127,7 @@ const Footer = () => {
                     href="/"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Products
+                    Projects
                   </Link>
                 </li>
                 <li>
@@ -220,7 +222,7 @@ const Footer = () => {
                   />
                   <button
                     type="submit"
-                    className="absolute right-0 top-0 mr-2 mt-2 flex items-center justify-center h-10 w-10 text-base text-white bg-primary rounded-lg duration-300 hover:bg-primary/80"
+                    className="absolute right-0 top-0 mr-2 mt-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-base text-white duration-300 hover:bg-primary/80"
                   >
                     <svg
                       width="20"

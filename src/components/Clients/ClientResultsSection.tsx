@@ -30,11 +30,11 @@ const ClientResultsSection = () => {
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-16 dark:bg-bg-color-dark">
       <div className="container mx-auto px-4">
         <div className="relative mb-12 text-center">
-          <div className="absolute inset-x-0 top-1/2 border-t border-gray-300"></div>
-          <h2 className="relative inline-block bg-white px-4 text-3xl font-bold text-black">
+          <div className="absolute inset-x-0 top-1/2 border-t border-gray-200 dark:border-gray-700" />
+          <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold dark:bg-bg-color-dark">
             Our Client Results in Oil & Gas
           </h2>
         </div>
@@ -42,7 +42,7 @@ const ClientResultsSection = () => {
           {results.map((result, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+              className="overflow-hidden rounded-lg border border-gray-200 shadow-lg dark:border-gray-700"
             >
               <div
                 className="h-48 bg-cover bg-center"
@@ -54,14 +54,16 @@ const ClientResultsSection = () => {
                 <p className="mb-2 font-semibold text-primary">
                   {result.category}
                 </p>
-                <h3 className="mb-4 text-xl font-bold text-black">
-                  {result.title}
-                </h3>
-                <p className="mb-4 text-gray-600">{result.description}</p>
+                <h3 className="mb-4 text-xl font-bold">{result.title}</h3>
+                <p className="mb-4 text-gray-600 dark:text-gray-300">
+                  {result.description}
+                </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-500">{result.type}</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {result.type}
+                  </span>
                   <svg
-                    className="h-5 w-5 text-gray-500"
+                    className="h-4 w-4 text-gray-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

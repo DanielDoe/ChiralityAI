@@ -53,32 +53,36 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-gray-100 py-16 dark:bg-bg-color-dark">
       <div className="container mx-auto">
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center">
-            <div className="w-16 border-t border-gray-300"></div>
+            <div className="w-16 border-t border-gray-200 dark:border-gray-700" />
             <h2 className="px-4 text-3xl font-semibold">
               Our Oil & Gas Consulting Experts
             </h2>
-            <div className="w-16 border-t border-gray-300"></div>
+            <div className="w-16 border-t border-gray-200 dark:border-gray-700" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center text-center h-80 ${index % 4 !== 3 ? "border-r border-gray-300" : ""} ${index < teamMembers.length - 4 ? "border-b border-gray-300" : ""}`}
+              className={`flex h-80 flex-col items-center text-center ${index % 4 !== 3 ? "border-r border-gray-300 dark:border-gray-700" : ""} ${index < teamMembers.length - 4 ? "border-b border-gray-300 dark:border-gray-700" : ""}`}
             >
               <div
-                className="mb-4 h-32 w-32 bg-cover bg-center rounded-full"
+                className="mb-4 h-32 w-32 rounded-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${member.image})` }}
                 role="img"
                 aria-label={member.name}
               />
               <h3 className="text-lg font-medium">{member.name}</h3>
-              <p className="text-gray-600">{member.position}</p>
-              <p className="text-gray-600">{member.location}</p>
+              <p className="text-gray-500 dark:text-gray-600">
+                {member.position}
+              </p>
+              <p className="text-gray-400 dark:text-gray-700">
+                {member.location}
+              </p>
             </div>
           ))}
         </div>

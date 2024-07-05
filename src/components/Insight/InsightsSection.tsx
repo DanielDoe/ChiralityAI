@@ -37,11 +37,11 @@ const InsightsSection = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="bg-gray-light py-16 dark:bg-bg-color-dark">
       <div className="container mx-auto text-center">
         <div className="relative">
-          <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300" />
-          <h2 className="relative z-10 inline-block bg-gray-50 px-4 text-3xl font-semibold">
+          <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300 dark:border-gray-700" />
+          <h2 className="relative z-10 inline-block bg-gray-light px-4 text-3xl font-semibold dark:bg-bg-color-dark">
             Our Insights on Oil & Gas
           </h2>
         </div>
@@ -50,7 +50,7 @@ const InsightsSection = () => {
         {insights.map((insight, index) => (
           <div
             key={index}
-            className="relative flex h-[480px] flex-col bg-white p-4 shadow-md"
+            className="relative flex h-[480px] flex-col rounded-md border border-gray-300 bg-white p-4 shadow-md dark:border-gray-700 dark:bg-bg-color-dark dark:shadow-sm"
           >
             <div
               className="mb-4 h-40 w-full bg-red-500 bg-cover bg-center"

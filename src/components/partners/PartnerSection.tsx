@@ -16,11 +16,11 @@ const partners = [
 
 const PartnerSection = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 dark:bg-bg-color-dark">
       <div className="container mx-auto text-center">
         <div className="relative mb-8">
-          <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300" />
-          <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold">
+          <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300 dark:border-gray-700" />
+          <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold dark:bg-bg-color-dark">
             Our Trusted Partners
           </h2>
         </div>
@@ -40,11 +40,7 @@ const PartnerSection = () => {
               href="#"
               className="mx-2 flex items-center space-x-4"
             >
-              <div
-                className="h-10 w-10 bg-cover bg-center"
-                style={{ backgroundImage: `url(${partner.logo})` }}
-              />
-              <span className="text-xl font-bold text-gray-700 text-primary">
+              <span className="text-xl font-bold text-gray-400">
                 {partner.name}
               </span>
             </Link>
