@@ -5,8 +5,8 @@ const brandsData: Brand[] = [
     id: 6,
     name: "Murphy",
     href: "https://formbold.com",
-    image: "/images/brands/formbold.svg",
-    imageLight: "/images/brands/formbold-light.svg",
+    image: "/images/brands/Murphy_Oil_Logo.png",
+    imageLight: "/images/brands/Murphy_Oil_Logo.png",
   },
   {
     id: 1,

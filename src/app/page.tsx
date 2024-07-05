@@ -1,6 +1,4 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -9,11 +7,12 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import InsightsSection from "@/components/Insight/InsightsSection";
-import EnergySectorExpertise from '@/components/Sector/EnergySectorExpertise';
-import ReportSection from '@/components/Report/ReportSection'; 
-import OilGasExperience from '@/components/Experience/OilGasExperience';
-import ClientResultsSection from '@/components/Clients/ClientResultsSection';
-import TeamSection from '@/components/Teams/TeamSection';
+import EnergySectorExpertise from "@/components/Sector/EnergySectorExpertise";
+import ReportSection from "@/components/Report/ReportSection";
+import OilGasExperience from "@/components/Experience/OilGasExperience";
+import ClientResultsSection from "@/components/Clients/ClientResultsSection";
+import TeamSection from "@/components/Teams/TeamSection";
+import PartnerSection from "@/components/partners/PartnerSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function Home() {
       <Hero />
       <Features />
       <OilGasExperience />
-      <Brands />
       <ClientResultsSection />
       <TeamSection />
       <Testimonials />
@@ -37,6 +35,7 @@ export default function Home() {
       <InsightsSection />
       <EnergySectorExpertise />
       <AboutSectionOne />
+      <PartnerSection />
       <Projects />
       <Contact />
     </>

@@ -3,52 +3,52 @@ import React from "react";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Luis Uriza",
+      name: "Laura Nyaakens",
       position: "Partner",
       location: "Americas",
-      image: "/images/services/why-us-1.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Ethan Phillips",
       position: "Partner",
       location: "Houston",
-      image: "/images/services/why-us-2.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Brian Murphy",
       position: "Partner",
       location: "Perth",
-      image: "/images/services/why-us-1.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Emily Emmett",
       position: "Partner",
       location: "Houston",
-      image: "/images/services/why-us-2.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Tiziano Rivolta",
       position: "Partner",
       location: "Milan",
-      image: "/images/services/why-us-1.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Lili Chahbazi",
       position: "Partner",
       location: "London",
-      image: "/images/services/why-us-2.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "John Norton",
       position: "Partner",
       location: "Houston",
-      image: "/images/services/why-us-2.jpg",
+      image: "/images/team/laura.png",
     },
     {
       name: "Francesco Cigala",
       position: "Partner",
       location: "Kuala Lumpur",
-      image: "/images/services/why-us-1.jpg",
+      image: "/images/team/laura.png",
     },
   ];
 
@@ -68,10 +68,10 @@ const TeamSection = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center text-center ${index % 4 !== 3 ? "border-r border-gray-300" : ""} ${index < teamMembers.length - 4 ? "border-b border-gray-300" : ""}`}
+              className={`flex flex-col items-center text-center h-80 ${index % 4 !== 3 ? "border-r border-gray-300" : ""} ${index < teamMembers.length - 4 ? "border-b border-gray-300" : ""}`}
             >
               <div
-                className="mb-4 h-48 w-full bg-cover bg-center"
+                className="mb-4 h-32 w-32 bg-cover bg-center rounded-full"
                 style={{ backgroundImage: `url(${member.image})` }}
                 role="img"
                 aria-label={member.name}

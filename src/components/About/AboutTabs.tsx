@@ -31,12 +31,15 @@ const AboutTabs = () => {
         <div className="px-4">
           {activeTab === "mission" && (
             <div className="flex flex-row items-center gap-8">
-              <div className="h-96 w-96 rounded-md bg-teal-500" />
-              {/** Place image here */}
+              <div
+                className="h-96 w-96 rounded-md"
+                style={{
+                  backgroundImage: `url('/images/about/2922242_26964.jpg')`,
+                }}
+                role="img"
+                aria-label="Mission Image"
+              />
               <div className="flex-1">
-                <h3 className="mb-4 text-xl font-bold md:text-4xl">
-                  Our Mission
-                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   Our mission at Chirality Research Inc. is to leverage
                   cutting-edge AI and data analytics to deliver innovative
@@ -50,12 +53,15 @@ const AboutTabs = () => {
           )}
           {activeTab === "vision" && (
             <div className="flex flex-row items-center gap-8">
-              <div className="h-96 w-96 rounded-md bg-teal-500" />
-              {/** Place image here */}
+              <div
+                className="h-96 w-96 rounded-md"
+                style={{
+                  backgroundImage: `url('/images/about/27304920_na_april_14.jpg')`,
+                }}
+                role="img"
+                aria-label="Vision Image"
+              />
               <div className="flex-1">
-                <h3 className="mb-4 text-xl font-bold md:text-4xl">
-                  Our Vision
-                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   Our vision is to be a global leader in AI and data analytics,
                   known for our commitment to excellence, innovation, and
@@ -68,12 +74,15 @@ const AboutTabs = () => {
           )}
           {activeTab === "history" && (
             <div className="flex flex-row items-center gap-8">
-              <div className="h-96 w-96 rounded-md bg-teal-500" />
-              {/** Place image here */}
+              <div
+                className="h-96 w-96 rounded-md"
+                style={{
+                  backgroundImage: `url('/images/about/2148456078.jpg')`,
+                }}
+                role="img"
+                aria-label="Histroy Image"
+              />
               <div className="flex-1">
-                <h3 className="mb-4 text-xl font-bold md:text-4xl">
-                  Our History
-                </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   Equipped by a firm grip on science and driven by an
                   entrepreneurial spirit, Dr. Ismail launched Chirality’s
