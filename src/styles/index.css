@@ -44,3 +44,20 @@
   display: none; /* Safari and Chrome */
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+

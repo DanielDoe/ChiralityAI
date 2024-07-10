@@ -13,6 +13,7 @@ import OilGasExperience from "@/components/Experience/OilGasExperience";
 import ClientResultsSection from "@/components/Clients/ClientResultsSection";
 import TeamSection from "@/components/Teams/TeamSection";
 import PartnerSection from "@/components/partners/PartnerSection";
+import SlidingImageSection from "@/components/carousel/SlidingImageSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <SlidingImageSection />
       <Features />
       <OilGasExperience />
       <ClientResultsSection />
