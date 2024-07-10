@@ -132,7 +132,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/career"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     Careers
@@ -158,7 +158,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/"
+                    href="/esg-policy"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     ESG Policy
@@ -166,7 +166,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/covid-19"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     COVID-19
@@ -191,57 +191,25 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
-          <div className="w-full px-4 sm:w-1/2 md:w-1/4 lg:w-1/5">
+          <div className="w-full px-2 sm:w-1/2 md:w-1/4 lg:w-1/5">
             <div className="mb-12 lg:mb-16">
               <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Get in touch
+                Contact Us
               </h2>
               <ul>
                 <li className="mb-4 text-base text-body-color dark:text-body-color-dark">
-                  Toll Free Customer Care: +1 (123) 456 7890
+                  Principal Consultant: Dr. Huzefa Ismail
                 </li>
                 <li className="mb-4 text-base text-body-color dark:text-body-color-dark">
-                  Need live support? support@domain.com
+                  2900 Wilcrest Ave, Suite 270, Houston, TX 77082
+                </li>
+                <li className="mb-4 text-base text-body-color dark:text-body-color-dark">
+                  Email: huz@chiralityresearch.com
+                </li>
+                <li className="mb-4 text-base text-body-color dark:text-body-color-dark">
+                  Phone: +1 (281) 826-1685
                 </li>
               </ul>
-            </div>
-          </div>
-
-          <div className="w-full px-4 sm:w-1/2 md:w-1/4 lg:w-1/5">
-            <div className="mb-12 lg:mb-16">
-              <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Newsletter
-              </h2>
-              <form>
-                <div className="relative mb-6">
-                  <input
-                    type="email"
-                    placeholder="Email address"
-                    className="w-full rounded-lg border border-body-color py-3 pl-6 pr-14 text-base text-body-color placeholder-body-color duration-300 focus:border-primary focus:outline-none dark:border-body-color-dark dark:bg-transparent dark:text-white dark:placeholder-body-color-dark dark:focus:border-primary"
-                  />
-                  <button
-                    type="submit"
-                    className="absolute right-0 top-0 mr-2 mt-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-base text-white duration-300 hover:bg-primary/80"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.33301 10H16.6663M16.6663 10L10.833 16.6667M16.6663 10L10.833 3.33334"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>

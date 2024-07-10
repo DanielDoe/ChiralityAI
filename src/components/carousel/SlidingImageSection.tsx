@@ -5,6 +5,10 @@ const images = [
   "/images/usecases/operations-one.jpg",
   "/images/usecases/operations-one.jpg",
   "/images/usecases/operations-one.jpg",
+  "/images/usecases/operations-one.jpg",
+  "/images/usecases/operations-one.jpg",
+  "/images/usecases/operations-one.jpg",
+  "/images/usecases/operations-one.jpg"
   // Add more image paths as needed
 ];
 
