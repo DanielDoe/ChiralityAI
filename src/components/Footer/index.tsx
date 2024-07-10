@@ -143,7 +143,7 @@ const Footer = () => {
                     href="/"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Pricing
+                    Publications
                   </Link>
                 </li>
               </ul>
@@ -161,7 +161,7 @@ const Footer = () => {
                     href="/"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Company
+                    ESG Policy
                   </Link>
                 </li>
                 <li>
@@ -169,7 +169,7 @@ const Footer = () => {
                     href="/"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Press Media
+                    COVID-19
                   </Link>
                 </li>
                 <li>
