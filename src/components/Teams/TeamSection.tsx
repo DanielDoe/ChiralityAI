@@ -77,10 +77,10 @@ const TeamSection = () => {
                 aria-label={member.name}
               />
               <h3 className="text-lg font-medium">{member.name}</h3>
-              <p className="text-gray-500 dark:text-gray-600">
+              <p className="text-gray-600 dark:text-gray-400">
                 {member.position}
               </p>
-              <p className="text-gray-400 dark:text-gray-700">
+              <p className="text-gray-500 dark:text-gray-500">
                 {member.location}
               </p>
             </div>
