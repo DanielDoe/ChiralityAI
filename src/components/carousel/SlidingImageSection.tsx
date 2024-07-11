@@ -17,7 +17,7 @@ const images = [
 
 const SlidingImageSection = () => {
   return (
-    <section className="bg-gray-100 py-16 dark:bg-bg-color-dark">
+    <section className="bg-gray-50 py-16 dark:bg-bg-color-dark">
       <div className="container mx-auto overflow-hidden">
         <Marquee className="flex space-x-4">
           {images.map((image, index) => (

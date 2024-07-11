@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import CareerList from "@/components/Career/CareerList";
+import ContactSection from "@/components/Contact/ContactSection";
 
 export const metadata: Metadata = {
   title: "Careers | Chirality Research Inc.",
@@ -20,6 +21,7 @@ const CareerPage = () => {
           <CareerList />
         </div>
       </section>
+      <ContactSection />
     </>
   );
 };

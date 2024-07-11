@@ -3,6 +3,7 @@ import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import AboutTabs from "../../components/About/AboutTabs";
 import TeamSection from "@/components/About/TeamSection";
+import ContactSection from "@/components/Contact/ContactSection";
 
 import { Metadata } from "next";
 
@@ -22,6 +23,7 @@ const AboutPage = () => {
       <AboutTabs />
       <TeamSection />
       <AboutSectionOne />
+      <ContactSection />
     </>
   );
 };

@@ -14,6 +14,7 @@ import ClientResultsSection from "@/components/Clients/ClientResultsSection";
 import TeamSection from "@/components/Teams/TeamSection";
 import PartnerSection from "@/components/partners/PartnerSection";
 import SlidingImageSection from "@/components/carousel/SlidingImageSection";
+import WhyUsSection from "@/components/Services/WhyUsSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,17 +28,15 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <SlidingImageSection />
-      <Features />
+      <WhyUsSection />
       <OilGasExperience />
       <ClientResultsSection />
-      <TeamSection />
-      <Testimonials />
       <ReportSection />
       <InsightsSection />
       <EnergySectorExpertise />
       <AboutSectionOne />
       <PartnerSection />
+      <SlidingImageSection />
       <Projects />
       <Contact />
     </>

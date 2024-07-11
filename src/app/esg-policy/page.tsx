@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import ContactSection from "@/components/Contact/ContactSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ const EsgPolicyPage = () => {
           </div>
         </div>
       </section>
+      <ContactSection />
     </>
   );
 };
