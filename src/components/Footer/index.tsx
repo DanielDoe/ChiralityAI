@@ -116,10 +116,26 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/"
+                    href="/about"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Home
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    Our Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/use-cases"
+                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    Use Cases
                   </Link>
                 </li>
                 <li>
@@ -127,15 +143,7 @@ const Footer = () => {
                     href="/"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/career"
-                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                  >
-                    Careers
+                    ChiralityAI
                   </Link>
                 </li>
                 <li>
@@ -153,9 +161,25 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/4 lg:w-1/5">
             <div className="mb-12 lg:mb-16">
               <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                Support
+                Resources
               </h2>
               <ul>
+                <li>
+                  <Link
+                    href="/projects"
+                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/career"
+                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    Careers
+                  </Link>
+                </li>
                 <li>
                   <Link
                     href="/esg-policy"
@@ -174,15 +198,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                  >
-                    Our Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/"
+                    href="/contact"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     Contact Us

@@ -2,20 +2,40 @@ import React from "react";
 
 const teamMembers = [
   {
-    name: "Olivia Andrium",
+    name: "John Doe",
     position: "Project Manager",
-    image: "/images/projects/author-01.png",
+    image: "/images/team/huz.jpg",
   },
   {
-    name: "Jemse Kemorun",
+    name: "John Doe",
+    position: "Project Manager",
+    image: "/images/team/benny.png",
+  },
+  {
+    name: "John Doe",
     position: "Frontend Developer",
-    image: "/images/projects/author-02.png",
+    image: "/images/team/brian.png",
   },
   {
-    name: "Avi Pestarica",
+    name: "John Doe",
     position: "Product Designer",
-    image: "/images/projects/author-01.png",
+    image: "/images/team/laura.png",
   },
+  {
+    name: "John Doe",
+    position: "Product Designer",
+    image: "/images/team/van.png",
+  },
+  {
+    name: "John Doe",
+    position: "Product Designer",
+    image: "/images/team/tony.png",
+  },
+  {
+    name: "John Doe",
+    position: "Product Designer",
+    image: "/images/team/van.png",
+  }
 ];
 
 const TeamSection = () => {
@@ -30,42 +50,18 @@ const TeamSection = () => {
             Meet With Our Creative Dedicated Team
           </h2>
           <p className="text-base text-gray-600 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+            Our team consists of experienced professionals who are dedicated to delivering innovative solutions. We work collaboratively to ensure the best outcomes for our clients.
           </p>
         </div>
 
-        <div className="mx-auto mb-8 flex w-full max-w-[768px] flex-row items-center justify-center">
-          {teamMembers.map((member) => (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-4 lg:grid-cols-4">
+          {teamMembers.map((member, index) => (
             <div
-              key={member.name}
-              className="inline-flex flex-1 flex-col items-center text-center"
+              key={index}
+              className="flex flex-col items-center text-center"
             >
               <div
-                className="mb-4 h-40 w-40 rounded-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${member.image})` }}
-                role="img"
-                aria-label={member.name}
-              />
-              <h3 className="text-xl font-semibold text-black dark:text-white">
-                {member.name}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {member.position}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mx-auto flex w-full max-w-[768px] flex-row items-center justify-center">
-          {teamMembers.map((member) => (
-            <div
-              key={member.name}
-              className="inline-flex flex-1 flex-col items-center text-center"
-            >
-              <div
-                className="mb-4 h-40 w-40 rounded-full bg-cover bg-center"
+                className="mb-2 h-32 w-32 rounded-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${member.image})` }}
                 role="img"
                 aria-label={member.name}
