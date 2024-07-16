@@ -3,12 +3,13 @@ import { Solution } from "@/types/solution";
 const aiSolutionsData: Solution[] = [
   {
     id: 1,
-    title: "Implementing AI to correlate electricity data with weather forecast data to improve operational efficiency",
+    title:
+      "Implementing AI to correlate electricity data with weather forecast data to improve operational efficiency",
     description: "Paper Submitted to IEEE",
-    image: "/images/solutions/solution-01.jpg",
+    image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/authors/author-01.png",
+      image: "/images/projects/project-02.jpg",
       designation: "Research Scientist",
     },
     tags: ["AI", "Operational Efficiency"],
@@ -17,11 +18,12 @@ const aiSolutionsData: Solution[] = [
   {
     id: 2,
     title: "Leveraging LLM models to improve subsurface workflows",
-    description: "Co-authored with Sean/Moksh – Paper to be submitted to SPE DSDE",
-    image: "/images/solutions/solution-02.jpg",
+    description:
+      "Co-authored with Sean/Moksh – Paper to be submitted to SPE DSDE",
+    image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/authors/author-02.png",
+      image: "/images/projects/project-02.jpg",
       designation: "Research Scientist",
     },
     tags: ["LLM", "Subsurface Workflows"],
@@ -29,12 +31,13 @@ const aiSolutionsData: Solution[] = [
   },
   {
     id: 3,
-    title: "Applying classification modeling to optimizing production forecasting",
+    title:
+      "Applying classification modeling to optimizing production forecasting",
     description: "Paper to be submitted to SPE - stuck in legal at the moment",
-    image: "/images/solutions/solution-03.jpg",
+    image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/authors/author-03.png",
+      image: "/images/projects/project-02.jpg",
       designation: "Research Scientist",
     },
     tags: ["Classification Modeling", "Production Forecasting"],
@@ -44,10 +47,10 @@ const aiSolutionsData: Solution[] = [
     id: 4,
     title: "Pivoting towards ML for OPEX cost tracking to reduce OPEX",
     description: "Co-authored with an operator with 18K wells",
-    image: "/images/solutions/solution-04.jpg",
+    image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/authors/author-04.png",
+      image: "/images/projects/project-02.jpg",
       designation: "Research Scientist",
     },
     tags: ["ML", "OPEX Cost Tracking"],
@@ -56,11 +59,12 @@ const aiSolutionsData: Solution[] = [
   {
     id: 5,
     title: "Scope I and III sensitivity analysis",
-    description: "Co-authored with VP of HSE – Paper to be Submitted to SPE – HSENow",
-    image: "/images/solutions/solution-05.jpg",
+    description:
+      "Co-authored with VP of HSE – Paper to be Submitted to SPE – HSENow",
+    image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/authors/author-05.png",
+      image: "/images/projects/project-02.jpg",
       designation: "Research Scientist",
     },
     tags: ["Scope I and III", "Sensitivity Analysis"],

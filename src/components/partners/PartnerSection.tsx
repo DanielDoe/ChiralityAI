@@ -1,17 +1,30 @@
 import Link from "next/link";
 
 const partners = [
-  { name: "Company One", logo: "/images/partners/image-holder.png" },
-  { name: "Company Two", logo: "/images/partners/image-holder.png" },
-  { name: "Company Three", logo: "/images/partners/image-holder.png" },
-  { name: "Company Four", logo: "/images/partners/image-holder.png" },
-  { name: "Company Five", logo: "/images/partners/image-holder.png" },
-  { name: "Company Six", logo: "/images/partners/image-holder.png" },
-  { name: "Company Seven", logo: "/images/partners/image-holder.png" },
-  { name: "Company Eight", logo: "/images/partners/image-holder.png" },
-  { name: "Company Nine", logo: "/images/partners/image-holder.png" },
-  { name: "Company Ten", logo: "/images/partners/image-holder.png" },
-  // Add more partners as needed
+  { name: "afs", logo: "/images/partners/afs.png" },
+  { name: "baker", logo: "/images/partners/baker.png" },
+  { name: "benchmark", logo: "/images/partners/benchmark.png" },
+  { name: "canary", logo: "/images/partners/canary.png" },
+  { name: "companyA", logo: "/images/partners/companyA.png" },
+  { name: "conoco", logo: "/images/partners/conoco.png" },
+  { name: "dp", logo: "/images/partners/dp.png" },
+  { name: "evolve", logo: "/images/partners/evolve.png" },
+  { name: "exxon", logo: "/images/partners/exxon.jpg" },
+  { name: "g2mt", logo: "/images/partners/g2mt.png" },
+  { name: "hali", logo: "/images/partners/hali.png" },
+  { name: "inplex", logo: "/images/partners/inplex.png" },
+  { name: "kosmos", logo: "/images/partners/kosmos.png" },
+  { name: "maverick", logo: "/images/partners/maverick.jpg" },
+  { name: "mesquite", logo: "/images/partners/mesquite.png" },
+  { name: "mrl", logo: "/images/partners/mrl.png" },
+  { name: "murphy", logo: "/images/partners/murphy.png" },
+  { name: "ne", logo: "/images/partners/ne.png" },
+  { name: "repsol", logo: "/images/partners/repsol.png" },
+  { name: "sanchez", logo: "/images/partners/sanchez.png" },
+  { name: "strathecona", logo: "/images/partners/strathecona.png" },
+  { name: "tour", logo: "/images/partners/tour.jpg" },
+  { name: "triton", logo: "/images/partners/triton.png" },
+  { name: "vermilion", logo: "/images/partners/vermilion.jpg" },
 ];
 
 const PartnerSection = () => {
@@ -24,25 +37,17 @@ const PartnerSection = () => {
             Our Trusted Partners
           </h2>
         </div>
-        <div
-          className="partner-slider"
-          style={{
-            display: "flex",
-            overflowX: "auto",
-            whiteSpace: "nowrap",
-            WebkitOverflowScrolling: "touch",
-            scrollbarWidth: "none",
-          }}
-        >
+        <div className="partner-slider flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-8">
           {partners.map((partner, index) => (
             <Link
               key={index}
               href="#"
               className="mx-2 flex items-center space-x-4"
             >
-              <span className="text-xl font-bold text-gray-400">
-                {partner.name}
-              </span>
+              <div
+                className="h-24 w-44 bg-white bg-contain bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${partner.logo})` }}
+              ></div>
             </Link>
           ))}
         </div>

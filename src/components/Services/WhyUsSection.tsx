@@ -38,14 +38,14 @@ const WhyUsSection = () => {
                   WHY US
                 </h2>
                 <h3 className="mt-4 text-left text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl lg:text-4xl">
-                  We're constantly pushing the boundaries
+                  We&apos;re constantly pushing the boundaries
                 </h3>
                 <p className="mt-4 text-left text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg lg:text-xl">
                   At ChiralityAI, we’re committed to delivering excellence
                   across various industries. With our state-of-the-art
                   technology and advanced processes, we’re able to provide
-                  innovative solutions to meet the evolving needs of our
-                  clients worldwide.
+                  innovative solutions to meet the evolving needs of our clients
+                  worldwide.
                 </p>
               </div>
               <div className="mt-8 flex justify-center lg:justify-start">
