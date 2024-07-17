@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useTheme } from "next-themes";
 
 const Header = () => {
   // Navbar toggle
@@ -37,6 +38,7 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+  const { theme } = useTheme();
 
   return (
     <>
@@ -59,7 +61,9 @@ const Header = () => {
                 <div
                   className="-my-4 h-12 w-12"
                   style={{
-                    backgroundImage: `url(/images/logo/logo.gif)`,
+                    backgroundImage: `url(/images/logo/${
+                      theme === "dark" ? "logo.gif" : "logo.gif"
+                    })`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                   }}
