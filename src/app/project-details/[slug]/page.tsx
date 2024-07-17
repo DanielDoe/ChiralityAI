@@ -97,6 +97,14 @@ const ProjectDetailsPage = ({ params }: { params: { slug: string } }) => {
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     {project.significance}
                   </p>
+                  <h3 className="font-xl mb-6 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                    Usecases
+                  </h3>
+                  <ul className="mb-10 list-inside list-disc text-body-color">
+                    {project.usecases?.map((usecase, index) => (
+                      <li key={`${usecase}=${index}`}>{usecase}</li>
+                    ))}
+                  </ul>
 
                   <h3 className="font-xl mb-6 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Technology Stack

@@ -11,5 +11,6 @@ export interface Project {
   tags: string[];
   publishDate: string;
   significance: string;
+  usecases: string [];
   techStack: string[];
 }
