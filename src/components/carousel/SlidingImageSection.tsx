@@ -1,18 +1,38 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 const images = [
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  "/images/usecases/operations-one.jpg",
-  // Add more image paths as needed
+  "/images/projects/project1.png",
+  "/images/projects/project2.png",
+  "/images/projects/project3.png",
+  "/images/projects/project4.png",
+  "/images/projects/project5.png",
+  "/images/projects/project6.png",
+  "/images/projects/project7.png",
+  "/images/projects/project8.png",
+  "/images/projects/project9.png",
+  "/images/projects/project10.png",
+  "/images/projects/project11.png",
+  "/images/projects/project12.png",
+  "/images/projects/project13.png",
+  "/images/projects/project14.png",
+  "/images/projects/project15.png",
+  "/images/projects/project16.png",
+  "/images/projects/project17.png",
+  "/images/projects/project18.png",
+  "/images/projects/project19.png",
+  "/images/projects/project20.png",
+  "/images/projects/project21.png",
+  "/images/projects/project22.png",
+  "/images/projects/project23.png",
+  "/images/projects/project24.png",
+  "/images/projects/project25.png",
+  "/images/projects/project26.png",
+  "/images/projects/project27.png",
+  "/images/projects/project28.png"
 ];
 
 const SlidingImageSection = () => {
@@ -40,6 +60,13 @@ const SlidingImageSection = () => {
           ))}
         </Marquee>
       </div>
+      <div className="mt-12 text-center">
+          <Link href="/projects">
+            <span className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white">
+              SEE MORE
+            </span>
+          </Link>
+        </div>
     </section>
   );
 };

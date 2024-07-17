@@ -50,21 +50,39 @@ const WhyUsSection = () => {
               </div>
               <div className="mt-8 flex justify-center lg:justify-start">
                 <div className="mr-8 text-center lg:text-left">
-                  <h4 className="text-3xl font-bold text-primary">20+</h4>
+                  <h4 className="text-3xl font-bold text-primary">15K+</h4>
                   <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                    Years on market
+                    Wells
                   </p>
                 </div>
                 <div className="mr-8 text-center lg:text-left">
-                  <h4 className="text-3xl font-bold text-primary">3K+</h4>
+                  <h4 className="text-3xl font-bold text-primary">700K+</h4>
                   <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                    Big projects
+                    BOED
                   </p>
                 </div>
-                <div className="text-center lg:text-left">
-                  <h4 className="text-3xl font-bold text-primary">60+</h4>
+                <div className="mr-8 text-center lg:text-left">
+                  <h4 className="text-3xl font-bold text-primary">50+</h4>
                   <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                    Trusted partners
+                    Apps
+                  </p>
+                </div>
+                <div className="mr-8 text-center lg:text-left">
+                  <h4 className="text-3xl font-bold text-primary">24 </h4>
+                  <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                    Operators
+                  </p>
+                </div>
+                <div className="mr-8 text-center lg:text-left">
+                  <h4 className="text-3xl font-bold text-primary">100+</h4>
+                  <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                    Databases
+                  </p>
+                </div>
+                <div className="mr-8 text-center lg:text-left">
+                  <h4 className="text-3xl font-bold text-primary">30+</h4>
+                  <p className="mt-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                    Servers
                   </p>
                 </div>
               </div>

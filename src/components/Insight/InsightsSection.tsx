@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const InsightsSection = () => {
   const insights = [
@@ -79,11 +80,13 @@ const InsightsSection = () => {
           </div>
         ))}
       </div>
-      <div className="mt-8 text-center">
-        <button className="rounded-full bg-primary px-6 py-2 text-white hover:bg-primary/90">
-          See More
-        </button>
-      </div>
+      <div className="mt-12 text-center">
+          <Link href="/client-insights">
+            <span className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white">
+              SEE MORE
+            </span>
+          </Link>
+        </div>
     </div>
   );
 };
