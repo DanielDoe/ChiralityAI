@@ -10,4 +10,6 @@ export interface Project {
   };
   tags: string[];
   publishDate: string;
+  significance: string;
+  techStack: string[];
 }

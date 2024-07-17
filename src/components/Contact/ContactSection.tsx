@@ -22,7 +22,6 @@ const ContactSection = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
     </section>
   );
 };

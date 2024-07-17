@@ -32,7 +32,7 @@ const images = [
   "/images/projects/project25.png",
   "/images/projects/project26.png",
   "/images/projects/project27.png",
-  "/images/projects/project28.png"
+  "/images/projects/project28.png",
 ];
 
 const SlidingImageSection = () => {
@@ -49,7 +49,7 @@ const SlidingImageSection = () => {
       <div className="container mx-auto overflow-hidden">
         <Marquee className="flex space-x-4">
           {images.map((image, index) => (
-            <div key={index} className="mx-4 min-w-[300px]">
+            <div key={index} className="mx-4 min-w-[571.28px]">
               <div
                 className="h-80 w-full rounded-lg border bg-cover bg-center"
                 style={{ backgroundImage: `url(${image})` }}
@@ -61,12 +61,12 @@ const SlidingImageSection = () => {
         </Marquee>
       </div>
       <div className="mt-12 text-center">
-          <Link href="/projects">
-            <span className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white">
-              SEE MORE
-            </span>
-          </Link>
-        </div>
+        <Link href="/projects">
+          <span className="inline-block rounded bg-primary px-6 py-3 font-semibold text-white">
+            SEE MORE
+          </span>
+        </Link>
+      </div>
     </section>
   );
 };

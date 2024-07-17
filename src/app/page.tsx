@@ -37,7 +37,7 @@ export default function Home() {
       <AboutSectionOne />
       <PartnerSection />
       <SlidingImageSection />
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
     </>
   );

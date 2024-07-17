@@ -6,7 +6,7 @@ const projectData: Project[] = [
     title: "Production Maintenance Tracker",
     paragraph:
       "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, subsurface teams, with over 250 users. Resulted in a 21% reduction in ticket close-out time.",
-    image: "/images/projects/project1.png",
+    image: "/images/projects/ ",
     author: {
       name: "Dr. Huzefa Ismail",
       image: "/images/team/huz.jpg",
@@ -14,6 +14,8 @@ const projectData: Project[] = [
     },
     tags: ["maintenance", "communication", "optimization"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 2,
@@ -28,6 +30,8 @@ const projectData: Project[] = [
     },
     tags: ["chemical management", "optimization"],
     publishDate: "2024",
+    significance: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    techStack: ["Triazine", "H2S"],
   },
   {
     id: 3,
@@ -42,6 +46,8 @@ const projectData: Project[] = [
     },
     tags: ["pipeline", "integrity", "corrosion"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 4,
@@ -56,6 +62,8 @@ const projectData: Project[] = [
     },
     tags: ["machine learning", "corrosion", "monitoring"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 5,
@@ -70,6 +78,8 @@ const projectData: Project[] = [
     },
     tags: ["economic calculator", "pigging", "optimization"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 6,
@@ -84,6 +94,8 @@ const projectData: Project[] = [
     },
     tags: ["mercury partitioning", "modeling", "gas condensate"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 7,
@@ -98,6 +110,8 @@ const projectData: Project[] = [
     },
     tags: ["H2S treatment", "economic model", "optimization"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 8,
@@ -112,6 +126,8 @@ const projectData: Project[] = [
     },
     tags: ["produced water", "modeling", "optimization"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 9,
@@ -126,6 +142,8 @@ const projectData: Project[] = [
     },
     tags: ["data historian", "live streaming", "real-time data"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 10,
@@ -140,6 +158,8 @@ const projectData: Project[] = [
     },
     tags: ["tag normalization", "data optimization", "machine learning"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 11,
@@ -154,6 +174,8 @@ const projectData: Project[] = [
     },
     tags: ["cost reduction", "planning"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 12,
@@ -168,6 +190,8 @@ const projectData: Project[] = [
     },
     tags: ["forecasting", "production"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 13,
@@ -182,6 +206,8 @@ const projectData: Project[] = [
     },
     tags: ["profitability", "data analysis"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 14,
@@ -196,6 +222,8 @@ const projectData: Project[] = [
     },
     tags: ["carbon intensities", "environment"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 15,
@@ -210,6 +238,8 @@ const projectData: Project[] = [
     },
     tags: ["emissions", "sustainability"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 16,
@@ -224,6 +254,8 @@ const projectData: Project[] = [
     },
     tags: ["reporting", "environment"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 17,
@@ -238,6 +270,8 @@ const projectData: Project[] = [
     },
     tags: ["diversity", "inclusion"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 18,
@@ -252,6 +286,8 @@ const projectData: Project[] = [
     },
     tags: ["content management", "cross-functional"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 19,
@@ -266,6 +302,8 @@ const projectData: Project[] = [
     },
     tags: ["data search", "web development"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 20,
@@ -280,8 +318,10 @@ const projectData: Project[] = [
     },
     tags: ["production", "reporting"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
-{
+  {
     id: 21,
     title: "COVID-19 Tracker",
     paragraph:
@@ -294,6 +334,8 @@ const projectData: Project[] = [
     },
     tags: ["COVID-19", "tracker", "health", "safety"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 22,
@@ -308,6 +350,8 @@ const projectData: Project[] = [
     },
     tags: ["data", "normalization", "analytics"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 23,
@@ -322,6 +366,8 @@ const projectData: Project[] = [
     },
     tags: ["decline curve", "analysis", "oil and gas"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 24,
@@ -336,6 +382,8 @@ const projectData: Project[] = [
     },
     tags: ["well data", "extraction", "reporting"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 25,
@@ -350,6 +398,8 @@ const projectData: Project[] = [
     },
     tags: ["downtime", "report", "standardization"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 26,
@@ -364,6 +414,8 @@ const projectData: Project[] = [
     },
     tags: ["OPEX", "tracker", "finance"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 27,
@@ -378,6 +430,8 @@ const projectData: Project[] = [
     },
     tags: ["CAPEX", "accountability", "finance"],
     publishDate: "2024",
+    significance: "",
+    techStack: [],
   },
   {
     id: 28,
@@ -392,7 +446,9 @@ const projectData: Project[] = [
     },
     tags: ["project management", "dashboard"],
     publishDate: "2024",
-  }
+    significance: "",
+    techStack: [],
+  },
 ];
 
 export default projectData;
