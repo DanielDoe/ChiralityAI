@@ -18,7 +18,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Us"
-        description="Chirality Research Inc. is at the forefront of AI innovation, providing advanced solutions to enhance operational efficiency, safety, and sustainability across various industries. Our expertise in artificial intelligence empowers businesses to tackle complex challenges and achieve their goals with precision and confidence."
+        description="Chirality Research Inc. develops technological solutions to promote clean energy, sustainability, and the energy transition through the lens of ESG factors."
       />
       <AboutTabs />
       <TeamSection />
