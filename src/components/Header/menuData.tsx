@@ -21,18 +21,24 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
+    title: "Projects",
+    path: "/projects",
+    newTab: false,
+  },
+  {
+    id: 5,
     title: "Publications",
     path: "/use-cases",
     newTab: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "ChiralityAI",
     path: "/chirality-ai",
     newTab: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "Contact Us",
     path: "/contact",
     newTab: false,
