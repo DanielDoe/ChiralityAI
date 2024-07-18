@@ -35,7 +35,7 @@ const teamMembers = [
     name: "John Doe",
     position: "Product Designer",
     image: "/images/team/van.png",
-  }
+  },
 ];
 
 const TeamSection = () => {
@@ -50,16 +50,15 @@ const TeamSection = () => {
             Meet With Our Creative Dedicated Team
           </h2>
           <p className="text-base text-gray-600 dark:text-gray-400">
-            Our team consists of experienced professionals who are dedicated to delivering innovative solutions. We work collaboratively to ensure the best outcomes for our clients.
+            Our team consists of experienced professionals who are dedicated to
+            delivering innovative solutions. We work collaboratively to ensure
+            the best outcomes for our clients.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 place-content-center gap-4 sm:grid-cols-4 lg:grid-cols-7">
           {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center"
-            >
+            <div key={index} className="flex flex-col items-center text-center">
               <div
                 className="mb-2 h-32 w-32 rounded-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${member.image})` }}

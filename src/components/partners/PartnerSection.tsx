@@ -27,16 +27,23 @@ const partners = [
   { name: "vermilion", logo: "/images/partners/vermilion.jpg" },
 ];
 
-const PartnerSection = () => {
+type Props = {
+  showHeader?: boolean;
+  className?: string;
+};
+
+const PartnerSection: React.FC<Props> = ({ showHeader = true, className }) => {
   return (
-    <section className="bg-white py-16 dark:bg-bg-color-dark">
+    <section className={className ?? "bg-white py-16 dark:bg-bg-color-dark"}>
       <div className="container mx-auto text-center">
-        <div className="relative mb-8">
-          <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300 dark:border-gray-700" />
-          <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold dark:bg-bg-color-dark">
-            Our Trusted Partners
-          </h2>
-        </div>
+        {showHeader && (
+          <div className="relative mb-8">
+            <hr className="absolute left-0 top-1/2 w-full -translate-y-1/2 transform border-t border-gray-300 dark:border-gray-700" />
+            <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold dark:bg-bg-color-dark">
+              Our Trusted Partners
+            </h2>
+          </div>
+        )}
         <div className="partner-slider flex flex-row flex-wrap items-center justify-center gap-x-4 gap-y-8">
           {partners.map((partner, index) => (
             <Link
