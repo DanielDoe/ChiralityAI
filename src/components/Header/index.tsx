@@ -62,7 +62,7 @@ const Header = () => {
                   className="-my-4 h-12 w-12"
                   style={{
                     backgroundImage: `url(/images/logo/${
-                      theme === "dark" ? "logo.gif" : "logo.gif"
+                      theme === "dark" ? "logoWhite.gif" : "logo.gif"
                     })`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
