@@ -1,56 +1,123 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
+
+const results = [
+  {
+    id: 1,
+    title: "Production Maintenance Tracker",
+    description: "Achieved a 21% reduction in ticket close-out time through improved operational efficiency.",
+    category: "Operational Efficiency",
+    image: "/images/results/pexels-tomfisk-6048400.jpg",
+    type: "Report",
+  },
+  {
+    id: 2,
+    title: "Production Chemical Optimization",
+    description: "Optimized chemical treatment, leading to significant cost savings and improved efficiency.",
+    category: "Chemical Management",
+    image: "/images/results/pexels-chokniti-khongchum-1197604-2280571.jpg",
+    type: "Brief",
+  },
+  {
+    id: 3,
+    title: "Pipeline Integrity",
+    description: "Enhanced pipeline safety and reliability, reducing risks and maintenance costs.",
+    category: "Pipeline Safety",
+    image: "/images/results/steel-pipelines-cables-plant.jpg",
+    type: "Infographic",
+  },
+  {
+    id: 4,
+    title: "iPig Machine Learning",
+    description: "Improved pipeline maintenance through advanced image recognition and machine learning.",
+    category: "Pipeline Safety",
+    image: "/images/results/chris-ried-ieic5Tq8YMk-unsplash.jpg",
+    type: "Infographic",
+  },
+  {
+    id: 5,
+    title: "Pigging Economic Calculator",
+    description: "Provided a tool to better understand and manage the economic aspects of pigging activities, leading to cost savings and more efficient operations.",
+    category: "Economic Analysis",
+    image: "/images/results/pexels-davidmcbee-730547.jpg",
+    type: "Report",
+  },
+  {
+    id: 6,
+    title: "Mercury Partitioning Calculator",
+    description: "Enhanced understanding of mercury behavior in gas condensate systems, improving safety and efficiency in processing operations.",
+    category: "Chemical Management",
+    image: "/images/results/pexels-pixabay-220301.jpg",
+    type: "Report",
+  },
+  {
+    id: 7,
+    title: "H₂S Economic Model",
+    description: "Optimized H₂S treatment strategies to balance cost and efficiency, leading to better economic outcomes.",
+    category: "Economic Analysis",
+    image: "/images/results/pexels-pixabay-257775.jpg",
+    type: "Report",
+  },
+  {
+    id: 8,
+    title: "Produced Water Model",
+    description: "Improved water management in oil and gas operations, enhancing efficiency and environmental compliance.",
+    category: "Data & Water Management",
+    image: "/images/results/pexels-tom-fournier-208942721-16952913.jpg",
+    type: "Report",
+  },
+  {
+    id: 9,
+    title: "Data Historian: Canary",
+    description: "Increased data transparency and accessibility, enabling better decision-making and analysis.",
+    category: "Data & Water Management",
+    image: "/images/results/pexels-negativespace-97080.jpg",
+    type: "Report",
+  },
+  {
+    id: 10,
+    title: "Completions Tag Normalization",
+    description: "Improved data consistency and enabled better analytics, leading to enhanced operational efficiency and decision-making.",
+    category: "Data & Water Management",
+    image: "/images/results/pexels-pixabay-40784.jpg",
+    type: "Brief",
+  },
+];
+
+const categories = [
+  "All",
+  "Operational Efficiency",
+  "Chemical Management",
+  "Pipeline Safety",
+  "Economic Analysis",
+  "Data & Water Management",
+];
 
 const ClientResultsDetails = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Oil & Gas");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const results = [
-    {
-      title: "An Oil and Gas Leader Creates a New Clean Energy Business",
-      description:
-        "We helped build plans, launch, and set ambitious targets for this independent entity.",
-      category: "Oil & Gas",
-      image: "/images/client-results-1.jpg",
-      type: "Brief",
-    },
-    {
-      title: "Centralization boosts performance for an energy giant",
-      description:
-        "We helped OilCo shift from a geocentric model to a global model. The new, centralized organization was implemented ahead of schedule and with minimal disruption to the business.",
-      category: "Oil & Gas",
-      image: "/images/client-results-2.jpg",
-      type: "Report",
-    },
-    {
-      title: "An OFS captures post-merger growth synergies",
-      description:
-        "This oil field services provider needed help following a recent acquisition. Bain focused on ways to yield the highest potential revenue synergies. The result: Four times quarterly profit growth.",
-      category: "Oil & Gas",
-      image: "/images/client-results-3.jpg",
-      type: "Report",
-    },
-    {
-      title: "Forecast backs a bet on shale services",
-      description:
-        "A private equity firm asked Bain to perform due diligence on their shale gas acquisition target; we advised they buy. Since the successful acquisition, the stock price has greatly appreciated.",
-      category: "Oil & Gas",
-      image: "/images/client-results-4.jpg",
-      type: "Brief",
-    },
-  ];
+  const filteredResults = selectedCategory === "All"
+    ? results
+    : results.filter((result) => result.category === selectedCategory);
 
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="mb-8 flex items-center">
           <span className="mr-4">Filter by:</span>
-          <button className="mr-4 rounded border border-gray-300 bg-white px-4 py-2 text-gray-700">
-            Industries
-          </button>
-          <button className="rounded border border-gray-300 bg-white px-4 py-2 text-gray-700">
-            Services
-          </button>
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`mr-4 rounded border border-gray-300 px-4 py-2 text-gray-700 ${
+                selectedCategory === category ? "bg-primary text-white" : "bg-white"
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
 
         <div className="mb-8 flex items-center">
@@ -59,7 +126,7 @@ const ClientResultsDetails = () => {
             {selectedCategory}{" "}
             <span
               className="ml-2 cursor-pointer"
-              onClick={() => setSelectedCategory(null)}
+              onClick={() => setSelectedCategory("All")}
             >
               ×
             </span>
@@ -67,9 +134,9 @@ const ClientResultsDetails = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {results.map((result, index) => (
+          {filteredResults.map((result) => (
             <div
-              key={index}
+              key={result.id}
               className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
             >
               <div
@@ -82,14 +149,18 @@ const ClientResultsDetails = () => {
                 <p className="mb-2 font-semibold text-primary">
                   {result.category}
                 </p>
-                <h3 className="mb-4 text-xl font-bold text-black">
-                  {result.title}
-                </h3>
+                <Link href={`/project-details/${result.id}`}>
+                  <span className="mb-4 text-xl font-bold hover:text-primary transition-colors duration-300 cursor-pointer">
+                    {result.title}
+                  </span>
+                </Link>
                 <p className="mb-4 text-gray-600">{result.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-500">{result.type}</span>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    {result.type}
+                  </span>
                   <svg
-                    className="h-5 w-5 text-gray-500"
+                    className="h-4 w-4 text-gray-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

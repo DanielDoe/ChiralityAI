@@ -4,27 +4,30 @@ import Link from "next/link";
 const ClientResultsSection = () => {
   const results = [
     {
-      title: "An Oil and Gas Leader Creates a New Clean Energy Business",
+      id: 1,
+      title: "Production Maintenance Tracker",
       description:
-        "We helped build plans, launch, and set ambitious targets for this independent entity.",
-      category: "Energy & Natural Resources",
-      image: "/images/services/why-us-1.jpg",
-      type: "Brief",
-    },
-    {
-      title: "Centralization boosts performance for an energy giant",
-      description:
-        "We helped OilCo shift from a geocentric model to a global model. The new, centralized organization was implemented ahead of schedule and with minimal disruption to the business.",
-      category: "Oil & Gas",
-      image: "/images/services/why-us-2.jpg",
+        "Achieved a 21% reduction in ticket close-out time through improved operational efficiency.",
+      category: "Operational Efficiency",
+      image: "/images/results/pexels-tomfisk-6048400.jpg",
       type: "Report",
     },
     {
-      title: "How to Win Clean Hydrogen Bids",
+      id: 2,
+      title: "Production Chemical Optimization",
       description:
-        "As competitive projects ramp up worldwide, here are five keys to developing successful bids.",
-      category: "Advanced Manufacturing & Services",
-      image: "/images/services/why-us-1.jpg",
+        "Optimized chemical treatment, leading to significant cost savings and improved efficiency.",
+      category: "Chemical Management",
+      image: "/images/results/pexels-chokniti-khongchum-1197604-2280571.jpg",
+      type: "Brief",
+    },
+    {
+      id: 3,
+      title: "Pipeline Integrity",
+      description:
+        "Enhanced pipeline safety and reliability, reducing risks and maintenance costs.",
+      category: "Pipeline Safety",
+      image: "/images/results/steel-pipelines-cables-plant.jpg",
       type: "Infographic",
     },
   ];
@@ -35,7 +38,7 @@ const ClientResultsSection = () => {
         <div className="relative mb-12 text-center">
           <div className="absolute inset-x-0 top-1/2 border-t border-gray-200 dark:border-gray-700" />
           <h2 className="relative z-10 inline-block bg-white px-4 text-3xl font-semibold dark:bg-bg-color-dark">
-            Our Client Results in Oil & Gas
+            Our Client Results
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -54,7 +57,11 @@ const ClientResultsSection = () => {
                 <p className="mb-2 font-semibold text-primary">
                   {result.category}
                 </p>
-                <h3 className="mb-4 text-xl font-bold">{result.title}</h3>
+                <Link href={`/project-details/${result.id}`}>
+                  <span className="mb-4 text-xl font-bold hover:text-primary transition-colors duration-300">
+                    {result.title}
+                  </span>
+                </Link>
                 <p className="mb-4 text-gray-600 dark:text-gray-300">
                   {result.description}
                 </p>

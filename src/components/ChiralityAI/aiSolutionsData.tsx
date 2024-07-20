@@ -6,10 +6,10 @@ const aiSolutionsData: Solution[] = [
     title:
       "Implementing AI to correlate electricity data with weather forecast data to improve operational efficiency",
     description: "Paper Submitted to IEEE",
-    image: "/images/projects/project-02.jpg",
+    image: "/images/chiralityai/wepnet2.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/projects/project-02.jpg",
+      image: "/images/team/huz.jpg",
       designation: "Research Scientist",
     },
     tags: ["AI", "Operational Efficiency"],
@@ -20,10 +20,10 @@ const aiSolutionsData: Solution[] = [
     title: "Leveraging LLM models to improve subsurface workflows",
     description:
       "Co-authored with Sean/Moksh – Paper to be submitted to SPE DSDE",
-    image: "/images/projects/project-02.jpg",
+    image: "/images/chiralityai/sample_report.png",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/projects/project-02.jpg",
+      image: "/images/team/huz.jpg",
       designation: "Research Scientist",
     },
     tags: ["LLM", "Subsurface Workflows"],
@@ -37,7 +37,7 @@ const aiSolutionsData: Solution[] = [
     image: "/images/projects/project-02.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/projects/project-02.jpg",
+      image: "/images/team/huz.jpg",
       designation: "Research Scientist",
     },
     tags: ["Classification Modeling", "Production Forecasting"],
@@ -47,10 +47,10 @@ const aiSolutionsData: Solution[] = [
     id: 4,
     title: "Pivoting towards ML for OPEX cost tracking to reduce OPEX",
     description: "Co-authored with an operator with 18K wells",
-    image: "/images/projects/project-02.jpg",
+    image: "/images/chiralityai/21394.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/projects/project-02.jpg",
+      image: "/images/team/huz.jpg",
       designation: "Research Scientist",
     },
     tags: ["ML", "OPEX Cost Tracking"],
@@ -61,10 +61,10 @@ const aiSolutionsData: Solution[] = [
     title: "Scope I and III sensitivity analysis",
     description:
       "Co-authored with VP of HSE – Paper to be Submitted to SPE – HSENow",
-    image: "/images/projects/project-02.jpg",
+    image: "/images/chiralityai/pexels-goumbik-590022.jpg",
     author: {
       name: "Dr. Huzeifa Ismail",
-      image: "/images/projects/project-02.jpg",
+      image: "/images/team/huz.jpg",
       designation: "Research Scientist",
     },
     tags: ["Scope I and III", "Sensitivity Analysis"],
