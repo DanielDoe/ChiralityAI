@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   paragraph: string;
   image: string;
+  cover: string;
   author: {
     name: string;
     image: string;

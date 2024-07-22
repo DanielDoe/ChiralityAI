@@ -7,6 +7,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, subsurface teams, with over 250 users. Resulted in a 21% reduction in ticket close-out time.",
     image: "/images/projects/project1.png",
+    cover: "/images/projects/19224.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Kho, Tac",
       image: "/images/team/huz.jpg",
@@ -33,6 +34,7 @@ const projectData: Project[] = [
     paragraph:
       "Implemented a metric-driven Chemical Management Program for H₂S over 600+ wells across 150,000 acres, determining the most economical options for chemical treatment.",
     image: "/images/projects/project2.png",
+    cover: "/images/results/pexels-chokniti-khongchum-1197604-2280571.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
@@ -57,6 +59,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a comprehensive pipeline integrity management program incorporating corrosion, chemical usage, and pigging/pipeline risk ranking to maintain operational safety.",
     image: "/images/projects/project3.png",
+    cover: "/images/results/steel-pipelines-cables-plant.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
@@ -82,6 +85,7 @@ const projectData: Project[] = [
     paragraph:
       "Used Google Cloud Vision API to develop a machine learning model based on field images to identify areas with high paraffin levels and corrosion, enabling effective monitoring and treatment scheduling.",
     image: "/images/projects/project4.png",
+    cover: "/images/projects/129794.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ruqaiya, Richard, Max",
       image: "/images/team/huz.jpg",
@@ -105,6 +109,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a calculator to estimate the economic impact of pigging activities, optimizing costs and improving decision-making processes.",
     image: "/images/projects/project5.png",
+    cover: "/images/results/pexels-negativespace-97080.jpg",
     author: {
       name: "Dr. Huzefa Ismail, MJ, Zainab, Sachin",
       image: "/images/team/huz.jpg",
@@ -131,6 +136,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a calculator to model mercury partitioning in gas condensate systems using modern equations of state.",
     image: "/images/projects/project6.png",
+    cover: "/images/projects/2148292565.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
@@ -155,6 +161,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a model to evaluate the economic impact of different H₂S treatment strategies, optimizing for cost and efficiency.",
     image: "/images/projects/project7.png",
+    cover: "/images/results/pexels-pixabay-257775.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
@@ -179,6 +186,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a model to understand the behavior of produced water in oil and gas operations, improving water management practices.",
     image: "/images/projects/project8.png",
+    cover: "/images/results/pexels-pixabay-40784.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
@@ -203,6 +211,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a system to open-source internal live streaming data to engineers, enhancing data accessibility and analysis.",
     image: "/images/projects/project9.png",
+    cover: "/images/projects/134032.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Zam, Malik",
       image: "/images/team/huz.jpg",
@@ -228,6 +237,7 @@ const projectData: Project[] = [
     paragraph:
       "Devised a multi-tier classification method to filter and normalize completion tags, improving data consistency and enabling better analytics.",
     image: "/images/projects/project10.png",
+    cover: "/images/projects/pexels-fauxels-3183153.jpg",
     author: {
       name: "MJ, Zam, Malik, Tac",
       image: "/images/team/huz.jpg",
@@ -252,6 +262,7 @@ const projectData: Project[] = [
     paragraph:
       "Implemented dynamic scheduling for treatment frequency and volume optimization using in-house app based on well production and temperature. Resulted in significant cost reduction and improved planning processes.",
     image: "/images/projects/project11.png",
+    cover: "/images/projects/pexels-kateryna-babaieva-1423213-2760241.jpg",
     author: {
       name: "MJ, TAC, Zainab",
       image: "/images/team/mj.jpg",
@@ -278,6 +289,7 @@ const projectData: Project[] = [
     paragraph:
       "Built a model to forecast production and predict type curves in Permian Basin using publicly available, open-sourced data for over 12,000 wells.",
     image: "/images/projects/project12.png",
+    cover: "/images/projects/2150103567.jpg",
     author: {
       name: "Taher, Omar, Max",
       image: "/images/team/taher.jpg",
@@ -302,6 +314,7 @@ const projectData: Project[] = [
     paragraph:
       "Transitioned EFS Tiering to Profitability/LOE metrics as opposed to actual oil production, providing a more accurate measure of economic performance.",
     image: "/images/projects/project13.png",
+    cover: "/images/results/pexels-tomfisk-6048400.jpg",
     author: {
       name: "Dr. HUZ",
       image: "/images/team/huz.jpg",
@@ -327,6 +340,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a log-normal distribution algorithm to analyze historical data from EPA, EIA, and BOEM, providing insights into carbon intensities.",
     image: "/images/projects/project14.png",
+    cover: "/images/results/pexels-pixabay-257775.jpg",
     author: {
       name: "Dr. HUZ, AMA, MJ, Taher, Shaq",
       image: "/images/team/ama.jpg",
@@ -355,6 +369,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a model to analyze and reduce scope-3 emissions across various travel and accommodation categories, enhancing sustainability efforts.",
     image: "/images/projects/project15.png",
+    cover: "/images/projects/pexels-distelapparath-3044479.jpg",
     author: {
       name: "AMA, MJ, TAC, Zainab, Sachin",
       image: "/images/team/ama.jpg",
@@ -383,6 +398,7 @@ const projectData: Project[] = [
     paragraph:
       "Created an app for comprehensive environmental reporting, including fuel usage, emissions tracking, and compliance monitoring.",
     image: "/images/projects/project16.png",
+    cover: "/images/projects/134032.jpg",
     author: {
       name: "TAC, AMA, MJ, Zainab",
       image: "/images/team/tac.jpg",
@@ -410,6 +426,7 @@ const projectData: Project[] = [
     paragraph:
       "Conducted a timeseries analysis of diversity and inclusion metrics by department, providing insights into organizational diversity trends.",
     image: "/images/projects/project17.png",
+    cover: "/images/projects/pexels-goumbik-590022.jpg",
     author: {
       name: "Dr. HUZ",
       image: "/images/team/huz.jpg",
@@ -435,6 +452,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a centralized content-management portal for cross-discipline, cross-functional solutions organized by different business units.",
     image: "/images/projects/project18.png",
+    cover: "/images/projects/129794.jpg",
     author: {
       name: "Laura, TAC, Ethesham",
       image: "/images/team/laura.jpg",
@@ -460,6 +478,7 @@ const projectData: Project[] = [
     paragraph:
       "Developed a dedicated server and real-time data search engine for daily data crawling, enhancing data accessibility and search capabilities.",
     image: "/images/projects/project19.png",
+    cover: "/images/projects/pexels-anna-nekrashevich-6801648.jpg",
     author: {
       name: "TAC, Taher, Ethesham, Zainab, Sachin",
       image: "/images/team/tac.jpg",
@@ -488,6 +507,7 @@ const projectData: Project[] = [
     paragraph:
       "Created a daily production performance report system integrating SQL Server, P2, and Spotfire for comprehensive data analysis and reporting.",
     image: "/images/projects/project20.png",
+    cover: "/images/results/pexels-tomfisk-6048400.jpg",
     author: {
       name: "Dr. HUZ, Tony, Ama, MJ, Zainab",
       image: "/images/team/huz.jpg",
@@ -514,6 +534,7 @@ const projectData: Project[] = [
     title: "COVID-19 Tracker",
     paragraph: "Effectively manage COVID-19 risks without impacting production/revenue or compromising employee safety.",
     image: "/images/projects/project21.png",
+    cover: "/images/insights/7244701_18704.jpg",
     author: {
       name: "AMA, TAC, MALIK, Dr. HUZ",
       image: "/images/team/huz.jpg",
@@ -538,6 +559,7 @@ const projectData: Project[] = [
     title: "Historical Data Normalization",
     paragraph: "Filling missing production data to improve accuracy and efficiency in historical data analysis.",
     image: "/images/projects/project22.png",
+    cover: "/images/projects/134032.jpg",
     author: {
       name: "MJ, AMA, TONY, SHAQ, ALI",
       image: "/images/team/huz.jpg",
@@ -563,6 +585,7 @@ const projectData: Project[] = [
     title: "Decline Curve Analysis",
     paragraph: "Analyzing decline curves to predict the lifetime production of wells.",
     image: "/images/projects/project23.png",
+    cover: "/images/projects/pexels-goumbik-590022.jpg",
     author: {
       name: "Dr. HUZ, AMA, MJ",
       image: "/images/team/huz.jpg",
@@ -588,6 +611,7 @@ const projectData: Project[] = [
     title: "Well Data Extraction",
     paragraph: "Extracting and organizing well data to improve accessibility and analysis.",
     image: "/images/projects/project24.png",
+    cover: "/images/projects/19224.jpg",
     author: {
       name: "TONY, ALI, SHAQ",
       image: "/images/team/huz.jpg",
@@ -611,6 +635,7 @@ const projectData: Project[] = [
     title: "Global Downtime Report",
     paragraph: "Providing consistent global visualization of nonproductive time data to identify areas of concern and improve operational downtime.",
     image: "/images/projects/project25.png",
+    cover: "/images/projects/pexels-anna-nekrashevich-6801648.jpg",
     author: {
       name: "Dr. HUZ",
       image: "/images/team/huz.jpg",
@@ -634,6 +659,7 @@ const projectData: Project[] = [
     title: "OPEX Tracker",
     paragraph: "Real-time field OPEX tracking to understand estimated $/BOE at a given moment in time.",
     image: "/images/projects/project26.png",
+    cover: "/images/projects/project-04.jpg",
     author: {
       name: "TAC, AMA, GEOFF",
       image: "/images/team/huz.jpg",
@@ -658,6 +684,7 @@ const projectData: Project[] = [
     title: "CAPEX Accountability App",
     paragraph: "Providing a comprehensive view of capital expenditure to ensure accountability and optimize budget management.",
     image: "/images/projects/project27.png",
+    cover: "/images/results/pexels-pixabay-220301.jpg",
     author: {
       name: "TAC, AMA, MJ, TAHA, ZAINAB, SACHIN, KHO",
       image: "/images/team/huz.jpg",
@@ -682,6 +709,7 @@ const projectData: Project[] = [
     title: "Clarity Project Management",
     paragraph: "Enhancing project management by providing clear dashboards and tracking tools.",
     image: "/images/projects/project28.png",
+    cover: "/images/projects/pexels-fauxels-3183153.jpg",
     author: {
       name: "TAC",
       image: "/images/team/huz.jpg",
