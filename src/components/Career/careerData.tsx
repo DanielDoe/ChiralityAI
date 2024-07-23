@@ -8,7 +8,7 @@ const careerData = [
     type: "Fulltime",
     field: "Engineering",
     location: "Houston, TX",
-    salary: "$20K - $30K / Hour",
+    salary: "$20 - $30 / Hour",
     responsibilities: [
       "Design, build, and maintain efficient data pipelines.",
       "Collaborate with data scientists to understand data requirements.",
@@ -42,7 +42,7 @@ const careerData = [
     type: "Fulltime",
     field: "Data Science",
     location: "San Francisco, CA",
-    salary: "$20K - $30K / Hour",
+    salary: "$20 - $30 / Hour",
     responsibilities: [
       "Analyze large amounts of information to discover trends and patterns.",
       "Build predictive models and machine-learning algorithms.",
@@ -76,7 +76,7 @@ const careerData = [
     type: "Fulltime",
     field: "IT",
     location: "Houston, TX",
-    salary: "$20K - $30K / Hour",
+    salary: "$20 - $30/ Hour",
     responsibilities: [
       "Install, configure, and maintain database systems.",
       "Monitor database performance and ensure data security.",
