@@ -8,11 +8,11 @@ const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+        <div className="-mx-4 grid auto-rows-fr grid-cols-12">
+          <div className="col-span-12 px-4 xl:col-span-7">
             <TicketForm />
           </div>
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+          <div className="col-span-12 px-4 xl:col-span-5">
             <NewsLatterBox />
           </div>
         </div>

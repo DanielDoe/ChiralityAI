@@ -19,15 +19,17 @@ const InsightDetails = () => {
       : insightData.filter((insight) => insight.category === selectedCategory);
 
   return (
-    <div className="bg-white py-16">
+    <div className="py-16">
       <div className="container mx-auto px-4">
         <div className="mb-8 flex items-center">
           <span className="mr-4">Filter by:</span>
           {categories.map((category) => (
             <button
               key={category}
-              className={`mr-4 rounded border border-gray-300 px-4 py-2 text-gray-700 ${
-                selectedCategory === category ? "bg-primary text-white" : "bg-white"
+              className={`mr-4 rounded border border-gray-200 px-4 py-2 text-gray-700 dark:border-gray-700 dark:text-gray-300 ${
+                selectedCategory === category
+                  ? "bg-primary text-white"
+                  : "bg-gray-100 dark:bg-gray-800"
               }`}
               onClick={() => setSelectedCategory(category)}
             >
@@ -53,7 +55,7 @@ const InsightDetails = () => {
           {filteredInsights.map((insight, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+              className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-800 dark:bg-gray-900"
             >
               <div
                 className="h-48 bg-cover bg-center"
@@ -62,16 +64,20 @@ const InsightDetails = () => {
                 aria-label="Insight Image"
               ></div>
               <div className="p-6">
-                <p className="mb-2 font-semibold text-primary">{insight.category}</p>
+                <p className="mb-2 font-semibold text-primary">
+                  {insight.category}
+                </p>
                 <a
                   href={insight.link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block mb-4 text-xl font-bold text-black hover:text-primary transition-colors duration-300"
+                  className="mb-4 block text-xl font-bold transition-colors duration-300 hover:text-primary"
                 >
                   {insight.title}
                 </a>
-                <p className="mb-4 text-gray-600 line-clamp-3">{insight.description}</p>
+                <p className="mb-4 line-clamp-3 text-gray-600">
+                  {insight.description}
+                </p>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-500">{insight.type}</span>
                   <svg

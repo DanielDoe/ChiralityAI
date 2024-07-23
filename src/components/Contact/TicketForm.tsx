@@ -2,15 +2,15 @@
 "use client";
 
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const TicketForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,29 +22,40 @@ const TicketForm = () => {
 
     const templateParams = {
       from_name: formData.name,
-      to_name: 'Chirality Research Inc.',
+      to_name: "Chirality Research Inc.",
       message: formData.message,
-      email: formData.email
+      email: formData.email,
     };
 
-    emailjs.send('service_fqrk5mi', 'template_km0ufug', templateParams, 'uEP_QoSj8qhcsJxFz')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setStatus('Ticket submitted successfully!');
-      }, (error) => {
-        console.error('FAILED...', error);
-        setStatus('There was an issue with the ticket submission. Please try again.');
-      });
+    emailjs
+      .send(
+        "service_fqrk5mi",
+        "template_km0ufug",
+        templateParams,
+        "uEP_QoSj8qhcsJxFz",
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setStatus("Ticket submitted successfully!");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setStatus(
+            "There was an issue with the ticket submission. Please try again.",
+          );
+        },
+      );
 
     setFormData({
-      name: '',
-      email: '',
-      message: ''
+      name: "",
+      email: "",
+      message: "",
     });
   };
 
   return (
-    <div className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
+    <div className="mb-12 h-full rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
       <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
         Need Help? Open a Ticket
       </h2>
@@ -115,8 +126,8 @@ const TicketForm = () => {
         </div>
       </form>
       {status && (
-        <div className="w-full px-4 mt-4">
-          <p className="text-sm text-red-500">{status}</p>
+        <div className="mt-4 w-full px-4">
+          <p className="text-sm text-green-500">{status}</p>
         </div>
       )}
     </div>

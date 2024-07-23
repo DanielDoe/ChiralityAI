@@ -7,7 +7,8 @@ const results = [
   {
     id: 1,
     title: "Production Maintenance Tracker",
-    description: "Achieved a 21% reduction in ticket close-out time through improved operational efficiency.",
+    description:
+      "Achieved a 21% reduction in ticket close-out time through improved operational efficiency.",
     category: "Operational Efficiency",
     image: "/images/results/pexels-tomfisk-6048400.jpg",
     type: "Report",
@@ -15,7 +16,8 @@ const results = [
   {
     id: 2,
     title: "Production Chemical Optimization",
-    description: "Optimized chemical treatment, leading to significant cost savings and improved efficiency.",
+    description:
+      "Optimized chemical treatment, leading to significant cost savings and improved efficiency.",
     category: "Chemical Management",
     image: "/images/results/pexels-chokniti-khongchum-1197604-2280571.jpg",
     type: "Brief",
@@ -23,7 +25,8 @@ const results = [
   {
     id: 3,
     title: "Pipeline Integrity",
-    description: "Enhanced pipeline safety and reliability, reducing risks and maintenance costs.",
+    description:
+      "Enhanced pipeline safety and reliability, reducing risks and maintenance costs.",
     category: "Pipeline Safety",
     image: "/images/results/steel-pipelines-cables-plant.jpg",
     type: "Infographic",
@@ -31,7 +34,8 @@ const results = [
   {
     id: 4,
     title: "iPig Machine Learning",
-    description: "Improved pipeline maintenance through advanced image recognition and machine learning.",
+    description:
+      "Improved pipeline maintenance through advanced image recognition and machine learning.",
     category: "Pipeline Safety",
     image: "/images/results/chris-ried-ieic5Tq8YMk-unsplash.jpg",
     type: "Infographic",
@@ -39,7 +43,8 @@ const results = [
   {
     id: 5,
     title: "Pigging Economic Calculator",
-    description: "Provided a tool to better understand and manage the economic aspects of pigging activities, leading to cost savings and more efficient operations.",
+    description:
+      "Provided a tool to better understand and manage the economic aspects of pigging activities, leading to cost savings and more efficient operations.",
     category: "Economic Analysis",
     image: "/images/results/pexels-davidmcbee-730547.jpg",
     type: "Report",
@@ -47,7 +52,8 @@ const results = [
   {
     id: 6,
     title: "Mercury Partitioning Calculator",
-    description: "Enhanced understanding of mercury behavior in gas condensate systems, improving safety and efficiency in processing operations.",
+    description:
+      "Enhanced understanding of mercury behavior in gas condensate systems, improving safety and efficiency in processing operations.",
     category: "Chemical Management",
     image: "/images/results/pexels-pixabay-220301.jpg",
     type: "Report",
@@ -55,7 +61,8 @@ const results = [
   {
     id: 7,
     title: "H₂S Economic Model",
-    description: "Optimized H₂S treatment strategies to balance cost and efficiency, leading to better economic outcomes.",
+    description:
+      "Optimized H₂S treatment strategies to balance cost and efficiency, leading to better economic outcomes.",
     category: "Economic Analysis",
     image: "/images/results/pexels-pixabay-257775.jpg",
     type: "Report",
@@ -63,7 +70,8 @@ const results = [
   {
     id: 8,
     title: "Produced Water Model",
-    description: "Improved water management in oil and gas operations, enhancing efficiency and environmental compliance.",
+    description:
+      "Improved water management in oil and gas operations, enhancing efficiency and environmental compliance.",
     category: "Data & Water Management",
     image: "/images/results/pexels-tom-fournier-208942721-16952913.jpg",
     type: "Report",
@@ -71,7 +79,8 @@ const results = [
   {
     id: 9,
     title: "Data Historian: Canary",
-    description: "Increased data transparency and accessibility, enabling better decision-making and analysis.",
+    description:
+      "Increased data transparency and accessibility, enabling better decision-making and analysis.",
     category: "Data & Water Management",
     image: "/images/results/pexels-negativespace-97080.jpg",
     type: "Report",
@@ -79,7 +88,8 @@ const results = [
   {
     id: 10,
     title: "Completions Tag Normalization",
-    description: "Improved data consistency and enabled better analytics, leading to enhanced operational efficiency and decision-making.",
+    description:
+      "Improved data consistency and enabled better analytics, leading to enhanced operational efficiency and decision-making.",
     category: "Data & Water Management",
     image: "/images/results/pexels-pixabay-40784.jpg",
     type: "Brief",
@@ -98,20 +108,23 @@ const categories = [
 const ClientResultsDetails = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const filteredResults = selectedCategory === "All"
-    ? results
-    : results.filter((result) => result.category === selectedCategory);
+  const filteredResults =
+    selectedCategory === "All"
+      ? results
+      : results.filter((result) => result.category === selectedCategory);
 
   return (
-    <div className="bg-white py-16">
+    <div className="py-16">
       <div className="container mx-auto px-4">
         <div className="mb-8 flex items-center">
           <span className="mr-4">Filter by:</span>
           {categories.map((category) => (
             <button
               key={category}
-              className={`mr-4 rounded border border-gray-300 px-4 py-2 text-gray-700 ${
-                selectedCategory === category ? "bg-primary text-white" : "bg-white"
+              className={`mr-4 rounded border border-gray-200 px-4 py-2 text-gray-700 dark:border-gray-700 dark:text-gray-300 ${
+                selectedCategory === category
+                  ? "bg-primary text-white"
+                  : "bg-gray-100 dark:bg-gray-800"
               }`}
               onClick={() => setSelectedCategory(category)}
             >
@@ -137,7 +150,7 @@ const ClientResultsDetails = () => {
           {filteredResults.map((result) => (
             <div
               key={result.id}
-              className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+              className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg dark:border-gray-800 dark:bg-gray-900"
             >
               <div
                 className="h-48 bg-cover bg-center"
@@ -150,7 +163,7 @@ const ClientResultsDetails = () => {
                   {result.category}
                 </p>
                 <Link href={`/project-details/${result.id}`}>
-                  <span className="mb-4 text-xl font-bold hover:text-primary transition-colors duration-300 cursor-pointer">
+                  <span className="mb-4 cursor-pointer text-xl font-bold transition-colors duration-300 hover:text-primary dark:text-white">
                     {result.title}
                   </span>
                 </Link>

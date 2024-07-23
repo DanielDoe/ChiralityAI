@@ -7,7 +7,7 @@ const SingleProject = ({ project }: { project: Project }) => {
   return (
     <>
       <div
-        className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark"
+        className="group relative h-[40rem] overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark"
         style={{ margin: "1rem auto" }}
       >
         <Link
@@ -23,12 +23,12 @@ const SingleProject = ({ project }: { project: Project }) => {
           <h3>
             <Link
               href={`/project-details/${project.id}`}
-              className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+              className="mb-4 block h-16 text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
             >
               {title}
             </Link>
           </h3>
-          <p className="mb-6 line-clamp-4 border-b border-body-color border-opacity-10 pb-6 text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
+          <p className="mb-6 line-clamp-4 h-44 border-b border-body-color border-opacity-10 pb-6 text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
             {paragraph}
           </p>
           <div className="flex items-center">

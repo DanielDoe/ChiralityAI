@@ -3,15 +3,15 @@
 
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const NewsletterBox = () => {
   const { theme } = useTheme();
   const [formData, setFormData] = useState({
-    name: '',
-    email: ''
+    name: "",
+    email: "",
   });
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const stopColor =
     typeof window === "undefined" || theme === "light" ? "#4A6CF7" : "#fff";
@@ -26,27 +26,38 @@ const NewsletterBox = () => {
 
     const templateParams = {
       from_name: formData.name,
-      to_name: 'Chirality Research Inc.',
+      to_name: "Chirality Research Inc.",
       message: `Please subscribe ${formData.name} (${formData.email}) to the newsletter.`,
     };
 
-    emailjs.send('service_fqrk5mi', 'template_km0ufug', templateParams, 'uEP_QoSj8qhcsJxFz')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setStatus('Subscription successful!');
-      }, (error) => {
-        console.error('FAILED...', error);
-        setStatus('There was an issue with the subscription. Please try again.');
-      });
+    emailjs
+      .send(
+        "service_fqrk5mi",
+        "template_km0ufug",
+        templateParams,
+        "uEP_QoSj8qhcsJxFz",
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setStatus("Subscription successful!");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setStatus(
+            "There was an issue with the subscription. Please try again.",
+          );
+        },
+      );
 
     setFormData({
-      name: '',
-      email: ''
+      name: "",
+      email: "",
     });
   };
 
   return (
-    <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
+    <div className="relative z-10 h-full rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
         Subscribe to receive future updates
       </h3>
@@ -80,7 +91,7 @@ const NewsletterBox = () => {
             We promise not to send you any spam.
           </p>
           {status && (
-            <div className="w-full px-4 mt-4">
+            <div className="mt-4 w-full px-4">
               <p className="text-sm text-red-500">{status}</p>
             </div>
           )}
