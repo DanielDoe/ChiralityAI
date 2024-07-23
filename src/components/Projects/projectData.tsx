@@ -4,9 +4,11 @@ const projectData: Project[] = [
   {
     id: 1,
     title: "Production Maintenance Tracker",
+    problem:"Tracking operational activity was difficult amidst the manual system of communication over long email chains.",
+    duration:"18 months",
     paragraph:
       "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, subsurface teams, with over 250 users. Resulted in a 21% reduction in ticket close-out time.",
-    image: "/images/projects/project1.png",
+    image: "/images/projects/project1.gif",
     cover: "/images/projects/19224.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Kho, Tac",
@@ -31,6 +33,8 @@ const projectData: Project[] = [
   {
     id: 2,
     title: "Production Chemical Optimization",
+    problem:"",
+    duration:"",
     paragraph:
       "Implemented a metric-driven Chemical Management Program for H₂S over 600+ wells across 150,000 acres, determining the most economical options for chemical treatment.",
     image: "/images/projects/project2.png",
@@ -56,6 +60,8 @@ const projectData: Project[] = [
   {
     id: 3,
     title: "Pipeline Integrity",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a comprehensive pipeline integrity management program incorporating corrosion, chemical usage, and pigging/pipeline risk ranking to maintain operational safety.",
     image: "/images/projects/project3.png",
@@ -82,6 +88,8 @@ const projectData: Project[] = [
   {
     id: 4,
     title: "iPig Machine Learning",
+    problem:"",
+    duration:"",
     paragraph:
       "Used Google Cloud Vision API to develop a machine learning model based on field images to identify areas with high paraffin levels and corrosion, enabling effective monitoring and treatment scheduling.",
     image: "/images/projects/project4.png",
@@ -106,6 +114,8 @@ const projectData: Project[] = [
   {
     id: 5,
     title: "Pigging Economic Calculator",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a calculator to estimate the economic impact of pigging activities, optimizing costs and improving decision-making processes.",
     image: "/images/projects/project5.png",
@@ -133,6 +143,8 @@ const projectData: Project[] = [
   {
     id: 6,
     title: "Mercury Partitioning Calculator",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a calculator to model mercury partitioning in gas condensate systems using modern equations of state.",
     image: "/images/projects/project6.png",
@@ -158,6 +170,8 @@ const projectData: Project[] = [
   {
     id: 7,
     title: "H₂S Economic Model",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a model to evaluate the economic impact of different H₂S treatment strategies, optimizing for cost and efficiency.",
     image: "/images/projects/project7.png",
@@ -183,6 +197,8 @@ const projectData: Project[] = [
   {
     id: 8,
     title: "Produced Water Model",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a model to understand the behavior of produced water in oil and gas operations, improving water management practices.",
     image: "/images/projects/project8.png",
@@ -208,6 +224,8 @@ const projectData: Project[] = [
   {
     id: 9,
     title: "Data Historian: Canary",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a system to open-source internal live streaming data to engineers, enhancing data accessibility and analysis.",
     image: "/images/projects/project9.png",
@@ -234,6 +252,8 @@ const projectData: Project[] = [
   {
     id: 10,
     title: "Completions Tag Normalization",
+    problem:"",
+    duration:"",
     paragraph:
       "Devised a multi-tier classification method to filter and normalize completion tags, improving data consistency and enabling better analytics.",
     image: "/images/projects/project10.png",
@@ -259,6 +279,8 @@ const projectData: Project[] = [
   {
     id: 11,
     title: "Automated Batch Treatment",
+    problem:"",
+    duration:"",
     paragraph:
       "Implemented dynamic scheduling for treatment frequency and volume optimization using in-house app based on well production and temperature. Resulted in significant cost reduction and improved planning processes.",
     image: "/images/projects/project11.png",
@@ -286,6 +308,8 @@ const projectData: Project[] = [
   {
     id: 12,
     title: "Permian Basin Production Model",
+    problem:"",
+    duration:"",
     paragraph:
       "Built a model to forecast production and predict type curves in Permian Basin using publicly available, open-sourced data for over 12,000 wells.",
     image: "/images/projects/project12.png",
@@ -311,6 +335,8 @@ const projectData: Project[] = [
   {
     id: 13,
     title: "Profitability Analysis",
+    problem:"",
+    duration:"",
     paragraph:
       "Transitioned EFS Tiering to Profitability/LOE metrics as opposed to actual oil production, providing a more accurate measure of economic performance.",
     image: "/images/projects/project13.png",
@@ -337,6 +363,8 @@ const projectData: Project[] = [
   {
     id: 14,
     title: "Carbon Intensities in GOM and Permian Basin",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a log-normal distribution algorithm to analyze historical data from EPA, EIA, and BOEM, providing insights into carbon intensities.",
     image: "/images/projects/project14.png",
@@ -366,6 +394,8 @@ const projectData: Project[] = [
   {
     id: 15,
     title: "Scope-3 Emissions",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a model to analyze and reduce scope-3 emissions across various travel and accommodation categories, enhancing sustainability efforts.",
     image: "/images/projects/project15.png",
@@ -395,6 +425,8 @@ const projectData: Project[] = [
   {
     id: 16,
     title: "Environmental Reporting App",
+    problem:"",
+    duration:"",
     paragraph:
       "Created an app for comprehensive environmental reporting, including fuel usage, emissions tracking, and compliance monitoring.",
     image: "/images/projects/project16.png",
@@ -423,6 +455,8 @@ const projectData: Project[] = [
   {
     id: 17,
     title: "D&I Timeseries Analysis",
+    problem:"",
+    duration:"",
     paragraph:
       "Conducted a timeseries analysis of diversity and inclusion metrics by department, providing insights into organizational diversity trends.",
     image: "/images/projects/project17.png",
@@ -449,6 +483,8 @@ const projectData: Project[] = [
   {
     id: 18,
     title: "mLabs",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a centralized content-management portal for cross-discipline, cross-functional solutions organized by different business units.",
     image: "/images/projects/project18.png",
@@ -475,6 +511,8 @@ const projectData: Project[] = [
   {
     id: 19,
     title: "KosGo",
+    problem:"",
+    duration:"",
     paragraph:
       "Developed a dedicated server and real-time data search engine for daily data crawling, enhancing data accessibility and search capabilities.",
     image: "/images/projects/project19.png",
@@ -504,6 +542,8 @@ const projectData: Project[] = [
   {
     id: 20,
     title: "Production Report",
+    problem:"",
+    duration:"",
     paragraph:
       "Created a daily production performance report system integrating SQL Server, P2, and Spotfire for comprehensive data analysis and reporting.",
     image: "/images/projects/project20.png",
@@ -532,6 +572,8 @@ const projectData: Project[] = [
   {
     id: 21,
     title: "COVID-19 Tracker",
+    problem:"",
+    duration:"",
     paragraph: "Effectively manage COVID-19 risks without impacting production/revenue or compromising employee safety.",
     image: "/images/projects/project21.png",
     cover: "/images/insights/7244701_18704.jpg",
@@ -557,6 +599,8 @@ const projectData: Project[] = [
   {
     id: 22,
     title: "Historical Data Normalization",
+    problem:"",
+    duration:"",
     paragraph: "Filling missing production data to improve accuracy and efficiency in historical data analysis.",
     image: "/images/projects/project22.png",
     cover: "/images/projects/134032.jpg",
@@ -583,6 +627,8 @@ const projectData: Project[] = [
   {
     id: 23,
     title: "Decline Curve Analysis",
+    problem:"",
+    duration:"",
     paragraph: "Analyzing decline curves to predict the lifetime production of wells.",
     image: "/images/projects/project23.png",
     cover: "/images/projects/pexels-goumbik-590022.jpg",
@@ -609,6 +655,8 @@ const projectData: Project[] = [
   {
     id: 24,
     title: "Well Data Extraction",
+    problem:"",
+    duration:"",
     paragraph: "Extracting and organizing well data to improve accessibility and analysis.",
     image: "/images/projects/project24.png",
     cover: "/images/projects/19224.jpg",
@@ -633,6 +681,8 @@ const projectData: Project[] = [
   {
     id: 25,
     title: "Global Downtime Report",
+    problem:"",
+    duration:"",
     paragraph: "Providing consistent global visualization of nonproductive time data to identify areas of concern and improve operational downtime.",
     image: "/images/projects/project25.png",
     cover: "/images/projects/pexels-anna-nekrashevich-6801648.jpg",
@@ -657,6 +707,8 @@ const projectData: Project[] = [
   {
     id: 26,
     title: "OPEX Tracker",
+    problem:"",
+    duration:"",
     paragraph: "Real-time field OPEX tracking to understand estimated $/BOE at a given moment in time.",
     image: "/images/projects/project26.png",
     cover: "/images/projects/project-04.jpg",
@@ -682,6 +734,8 @@ const projectData: Project[] = [
   {
     id: 27,
     title: "CAPEX Accountability App",
+    problem:"",
+    duration:"",
     paragraph: "Providing a comprehensive view of capital expenditure to ensure accountability and optimize budget management.",
     image: "/images/projects/project27.png",
     cover: "/images/results/pexels-pixabay-220301.jpg",
@@ -707,6 +761,8 @@ const projectData: Project[] = [
   {
     id: 28,
     title: "Clarity Project Management",
+    problem:"",
+    duration:"",
     paragraph: "Enhancing project management by providing clear dashboards and tracking tools.",
     image: "/images/projects/project28.png",
     cover: "/images/projects/pexels-fauxels-3183153.jpg",

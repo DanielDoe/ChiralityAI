@@ -82,9 +82,21 @@ const ProjectDetailsPage = ({ params }: { params: { slug: string } }) => {
                   </div>
                 </div>
                 <div>
+                  <h3 className="font-xl my-6 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                    Problem Statement:
+                  </h3>
+                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    {project.problem}
+                  </p>
+                  <h3 className="font-xl my-6 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                    Proposed Solution:
+                  </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     {project.paragraph}
                   </p>
+                  <h3 className="font-xl my-6 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                    Duration: {project.duration}
+                  </h3>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[1723/965] w-full ">
                       <Image src={project.image} alt="image" fill />

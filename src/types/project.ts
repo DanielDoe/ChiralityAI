@@ -1,6 +1,8 @@
 export interface Project {
   id: number;
   title: string;
+  problem: string;
+  duration: string;
   paragraph: string;
   image: string;
   cover: string;
