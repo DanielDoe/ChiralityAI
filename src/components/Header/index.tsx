@@ -1,11 +1,10 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { useTheme } from "next-themes";
 
 const Header = () => {
   // Navbar toggle
@@ -38,7 +37,6 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
-  const { theme } = useTheme();
 
   return (
     <>
@@ -59,17 +57,18 @@ const Header = () => {
                 }`}
               >
                 <div
-                  className="-my-4 h-12 w-12"
-                  style={{
-                    backgroundImage: `url(/images/logo/${
-                      theme === "dark" ? "logoWhite.gif" : "logo.gif"
-                    })`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                  }}
+                  className="-my-4 h-12 w-12 bg-cover bg-center dark:hidden"
+                  style={{ backgroundImage: "url(/images/logo/logo.gif)" }}
                   role="img"
-                  aria-label="ChiralityAI Logo"
+                  aria-label="ChiralityAI Logo (Light Theme)"
                 />
+                <div
+                  className="-my-4 hidden h-12 w-12 bg-cover bg-center dark:block"
+                  style={{ backgroundImage: "url(/images/logo/logoWhite.gif)" }}
+                  role="img"
+                  aria-label="ChiralityAI Logo (Dark Theme)"
+                />
+
                 <p className="whitespace-nowrap font-semibold">
                   Chirality Research
                 </p>
