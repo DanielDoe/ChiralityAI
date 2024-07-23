@@ -1,5 +1,6 @@
 "use client";
 
+import emailjs from "emailjs-com";
 import { useState } from "react";
 
 const CareerForm: React.FC = () => {
@@ -16,17 +17,28 @@ const CareerForm: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    const templateParams = {
-      from_name: formData.name,
-      to_name: "Chirality Research Inc.",
-      message: formData.message,
-      email: formData.email,
-    };
-
-    // TODO: handle career form
+    emailjs
+      .sendForm(
+        "service_fqrk5mi",
+        "template_km0ufug",
+        event.target,
+        "uEP_QoSj8qhcsJxFz",
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setStatus("Resume uploaded successfully!");
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setStatus(
+            "There was an issue with the ticket submission. Please try again.",
+          );
+        },
+      );
 
     setFormData({
       name: "",
@@ -37,7 +49,7 @@ const CareerForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form encType="multipart/form-data" onSubmit={handleSubmit}>
       <div className="-mx-4 flex flex-wrap">
         <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
@@ -116,9 +128,11 @@ const CareerForm: React.FC = () => {
 
         <div className="w-full px-4">
           <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-            Submit Ticket
+            Submit Application
           </button>
         </div>
+
+        <p className="px-4 pt-4 text-green-500">{status}</p>
       </div>
     </form>
   );
