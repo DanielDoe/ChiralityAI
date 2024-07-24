@@ -8,7 +8,7 @@ const projectData: Project[] = [
     duration: "18 months",
     link: "",
     paragraph: "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, and subsurface teams, with over 250 users. The app supports the Power Analytics initiative to track accounts reviewed, billing errors, inactive accounts, and tasks assigned to the team. It reduced dependency on spreadsheets and created a consolidated environment to capture efforts associated with the Power Analytics platform. Resulted in a 21% reduction in ticket close-out time.",
-    image: "/images/projects/project1.gif",
+    image: "/images/projects/project1.png",
     cover: "/images/projects/19224.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Kho, Tac",
@@ -70,7 +70,7 @@ const projectData: Project[] = [
     duration: "6 months",
     link: "",
     paragraph: "Developed a comprehensive pipeline integrity management program incorporating corrosion management, chemical usage, pigging/pipeline risk ranking, and support for the Power Analytics initiative. The program aims to track accounts reviewed, billing errors, inactive accounts, and tasks assigned to the team, reducing dependency on spreadsheets and creating a consolidated environment to capture efforts associated with the Power Analytics platform.",
-    image: "/images/projects/project3.gif",
+    image: "/images/projects/project3.png",
     cover: "/images/results/steel-pipelines-cables-plant.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
@@ -99,8 +99,8 @@ const projectData: Project[] = [
   {
     id: 4,
     title: "iPig Machine Learning",
-    problem:"",
-    duration:"",
+    problem:"Design algorithms to recognize presence/absence of corrosion product, paraffin, “other” based on captured field images.",
+    duration:"9 months",
     link: "",
     paragraph:
       "Used Google Cloud Vision API to develop a machine learning model based on field images to identify areas with high paraffin levels and corrosion, enabling effective monitoring and treatment scheduling.",
@@ -127,11 +127,11 @@ const projectData: Project[] = [
     id: 5,
     title: "Pigging Economic Calculator",
     problem:"",
-    duration:"",
+    duration:"1 week",
     link: "",
     paragraph:
       "Developed a calculator to estimate the economic impact of pigging activities, optimizing costs and improving decision-making processes.",
-    image: "/images/projects/project5.png",
+    image: "/images/projects/project5.gif",
     cover: "/images/results/pexels-negativespace-97080.jpg",
     author: {
       name: "Dr. Huzefa Ismail, MJ, Zainab, Sachin",
@@ -157,11 +157,11 @@ const projectData: Project[] = [
     id: 6,
     title: "Mercury Partitioning Calculator",
     problem:"",
-    duration:"",
+    duration:"6 months",
     link: "",
     paragraph:
       "Developed a calculator to model mercury partitioning in gas condensate systems using modern equations of state.",
-    image: "/images/projects/project6.png",
+    image: "/images/projects/project6.gif",
     cover: "/images/projects/2148292565.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
@@ -185,11 +185,11 @@ const projectData: Project[] = [
     id: 7,
     title: "H₂S Economic Model",
     problem:"",
-    duration:"",
+    duration:"1 month",
     link: "",
     paragraph:
       "Developed a model to evaluate the economic impact of different H₂S treatment strategies, optimizing for cost and efficiency.",
-    image: "/images/projects/project7.png",
+    image: "/images/projects/project7.jpeg",
     cover: "/images/results/pexels-pixabay-257775.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
@@ -213,11 +213,11 @@ const projectData: Project[] = [
     id: 8,
     title: "Produced Water Model",
     problem:"",
-    duration:"",
+    duration:"3 months",
     link: "",
     paragraph:
       "Developed a model to understand the behavior of produced water in oil and gas operations, improving water management practices.",
-    image: "/images/projects/project8.png",
+    image: "/images/projects/project8.jpeg",
     cover: "/images/results/pexels-pixabay-40784.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
@@ -240,12 +240,12 @@ const projectData: Project[] = [
   {
     id: 9,
     title: "Data Historian: Canary",
-    problem:"",
-    duration:"",
-    link: "",
+    problem:"Open sourcing internal live streaming data for engineers.",
+    duration:"9 months",
+    link: "https://pubs.spe.org/en/dsde/dsde-article-detail-page/?​",
     paragraph:
       "Developed a system to open-source internal live streaming data to engineers, enhancing data accessibility and analysis.",
-    image: "/images/projects/project9.png",
+    image: "/images/projects/project-9.png",
     cover: "/images/projects/134032.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Zam, Malik",
@@ -269,8 +269,8 @@ const projectData: Project[] = [
   {
     id: 10,
     title: "Completions Tag Normalization",
-    problem:"",
-    duration:"",
+    problem:"No analytics can be done on a massive data set of ~2.5 million completion tags due to variances in tag names, hence resulting in a missed opportunity for optimization.",
+    duration:"6 months",
     link: "",
     paragraph:
       "Devised a multi-tier classification method to filter and normalize completion tags, improving data consistency and enabling better analytics.",
@@ -297,8 +297,8 @@ const projectData: Project[] = [
   {
     id: 11,
     title: "Automated Batch Treatment",
-    problem:"",
-    duration:"",
+    problem:"Identify opportunities to reduce costs and improve planning processes.",
+    duration:"6 months",
     link: "",
     paragraph:
       "Implemented dynamic scheduling for treatment frequency and volume optimization using in-house app based on well production and temperature. Resulted in significant cost reduction and improved planning processes.",
@@ -306,7 +306,7 @@ const projectData: Project[] = [
     cover: "/images/projects/pexels-kateryna-babaieva-1423213-2760241.jpg",
     author: {
       name: "MJ, TAC, Zainab",
-      image: "/images/team/mj.jpg",
+      image: "/images/team/author-02.png",
       designation: "Data Analysts",
     },
     tags: ["batch treatment", "optimization", "cost reduction"],
@@ -327,16 +327,16 @@ const projectData: Project[] = [
   {
     id: 12,
     title: "Permian Basin Production Model",
-    problem:"",
-    duration:"",
+    problem:"Build model to forecast production and predict Type Curve in Permian Basin ",
+    duration:"3 months",
     link: "",
     paragraph:
       "Built a model to forecast production and predict type curves in Permian Basin using publicly available, open-sourced data for over 12,000 wells.",
-    image: "/images/projects/project12.png",
+    image: "/images/projects/project12.gif",
     cover: "/images/projects/2150103567.jpg",
     author: {
       name: "Taher, Omar, Max",
-      image: "/images/team/taher.jpg",
+      image: "/images/team/author-02.png",
       designation: "Data Scientists",
     },
     tags: ["production forecasting", "type curve prediction", "machine learning"],
@@ -393,7 +393,7 @@ const projectData: Project[] = [
     cover: "/images/results/pexels-pixabay-257775.jpg",
     author: {
       name: "Dr. HUZ, AMA, MJ, Taher, Shaq",
-      image: "/images/team/ama.jpg",
+      image: "/images/team/author-01.jpg",
       designation: "Data Analysts",
     },
     tags: ["carbon intensity", "data analysis", "environmental impact"],
