@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   problem: string;
   duration: string;
+  link: string;
   paragraph: string;
   image: string;
   cover: string;

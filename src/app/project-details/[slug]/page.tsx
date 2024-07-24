@@ -126,6 +126,25 @@ const ProjectDetailsPage = ({ params }: { params: { slug: string } }) => {
                       <li key={`${tech}=${index}`}>{tech}</li>
                     ))}
                   </ul>
+                  <div className="mb-6 flex items-start">
+                    <h3 className="font-xl font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                      Link:
+                    </h3>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-base font-medium leading-relaxed text-blue-600 hover:underline sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                      >
+                        {project.link}
+                      </a>
+                    ) : (
+                      <span className="ml-2 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                        Contact us for more information
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

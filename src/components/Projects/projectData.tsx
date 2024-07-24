@@ -4,10 +4,10 @@ const projectData: Project[] = [
   {
     id: 1,
     title: "Production Maintenance Tracker",
-    problem:"Tracking operational activity was difficult amidst the manual system of communication over long email chains.",
-    duration:"18 months",
-    paragraph:
-      "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, subsurface teams, with over 250 users. Resulted in a 21% reduction in ticket close-out time.",
+    problem: "Tracking operational activity was difficult amidst the manual system of communication over long email chains.",
+    duration: "18 months",
+    link: "",
+    paragraph: "Developed an in-house system of mobile applications to facilitate a communication system for on-field personnel and multiple teams, including artificial lift, chemical, and subsurface teams, with over 250 users. The app supports the Power Analytics initiative to track accounts reviewed, billing errors, inactive accounts, and tasks assigned to the team. It reduced dependency on spreadsheets and created a consolidated environment to capture efforts associated with the Power Analytics platform. Resulted in a 21% reduction in ticket close-out time.",
     image: "/images/projects/project1.gif",
     cover: "/images/projects/19224.jpg",
     author: {
@@ -15,14 +15,19 @@ const projectData: Project[] = [
       image: "/images/team/huz.jpg",
       designation: "Lead Researcher",
     },
-    tags: ["maintenance", "communication", "optimization"],
+    tags: ["maintenance", "communication", "optimization", "Power Analytics"],
     publishDate: "2024",
-    significance: "This project significantly improved operational efficiency by replacing the manual process with an automated workflow. It enhanced field communication, operational visibility, and resource tracking, leading to a substantial reduction in ticket close-out time and improved overall maintenance management.",
+    significance: "This project significantly improved operational efficiency by replacing the manual process with an automated workflow. It enhanced field communication, operational visibility, and resource tracking, leading to a substantial reduction in ticket close-out time and improved overall maintenance management. By consolidating efforts in a unified platform, the project streamlined the management of billing errors, inactive accounts, data errors, and task tracking.",
     usecases: [
       "Tracking operational activity and maintenance work orders",
       "Facilitating communication between field personnel and multiple teams",
       "Improving resource tracking and operational visibility",
       "Reducing ticket close-out times and enhancing overall efficiency",
+      "Billing Errors: Capture estimated savings and credit amounts by account and month",
+      "Inactive Accounts: Identify and manage inactive meters with no activity for 12 consecutive months",
+      "Data Errors: Field verification for ProdView wells/batteries to improve cost and consumption allocation accuracy",
+      "Task Tracker: Flag accounts for review, categorize tasks, and assign them with direct email notifications",
+      "Offline capabilities for field use in areas without cell service"
     ],
     techStack: [
       "Microsoft SQL Server",
@@ -33,11 +38,12 @@ const projectData: Project[] = [
   {
     id: 2,
     title: "Production Chemical Optimization",
-    problem:"",
-    duration:"",
+    problem:"Implementing a metric-driven Chemical Management Program for H₂S over 600+ wells across 150,000 acres",
+    duration:"9 months",
+    link: "https://www.lbcg.com/media/downloads/events/487/day-1-huzeifa-ismail-production-chemistry-and-integrity-management-and-leslie-malone-senior-staff-en.8005.pdf",
     paragraph:
       "Implemented a metric-driven Chemical Management Program for H₂S over 600+ wells across 150,000 acres, determining the most economical options for chemical treatment.",
-    image: "/images/projects/project2.png",
+    image: "/images/projects/project-2.png",
     cover: "/images/results/pexels-chokniti-khongchum-1197604-2280571.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
@@ -46,7 +52,7 @@ const projectData: Project[] = [
     },
     tags: ["chemical", "optimization"],
     publishDate: "2024",
-    significance: "This project helped in determining cost-effective strategies for H₂S treatment, improving operational efficiency and reducing CAPEX.",
+    significance: "Presented at London Business Conferences Group Conference. This project helped in determining cost-effective strategies for H₂S treatment, improving operational efficiency and reducing CAPEX.",
     usecases: [
       "Implementing chemical management programs",
       "Optimizing chemical treatment strategies",
@@ -60,36 +66,42 @@ const projectData: Project[] = [
   {
     id: 3,
     title: "Pipeline Integrity",
-    problem:"",
-    duration:"",
-    paragraph:
-      "Developed a comprehensive pipeline integrity management program incorporating corrosion, chemical usage, and pigging/pipeline risk ranking to maintain operational safety.",
-    image: "/images/projects/project3.png",
+    problem: "Challenges in managing pipeline integrity due to outdated systems and reliance on spreadsheets.",
+    duration: "6 months",
+    link: "",
+    paragraph: "Developed a comprehensive pipeline integrity management program incorporating corrosion management, chemical usage, pigging/pipeline risk ranking, and support for the Power Analytics initiative. The program aims to track accounts reviewed, billing errors, inactive accounts, and tasks assigned to the team, reducing dependency on spreadsheets and creating a consolidated environment to capture efforts associated with the Power Analytics platform.",
+    image: "/images/projects/project3.gif",
     cover: "/images/results/steel-pipelines-cables-plant.jpg",
     author: {
       name: "Dr. Huzefa Ismail, Ron",
       image: "/images/team/huz.jpg",
       designation: "Lead Researcher",
     },
-    tags: ["pipeline", "integrity"],
+    tags: ["pipeline", "integrity", "Power Analytics"],
     publishDate: "2024",
-    significance: "Enhanced pipeline safety and reliability through comprehensive integrity management, reducing risks and maintenance costs.",
+    significance: "The project significantly enhanced pipeline safety and reliability by integrating comprehensive integrity management practices. It reduced risks and maintenance costs and improved data accuracy and operational efficiency. By consolidating efforts in a unified platform, the project streamlined the management of billing errors, inactive accounts, data errors, and task tracking.",
     usecases: [
       "Corrosion management",
       "Chemical usage optimization",
       "Pigging and pipeline risk ranking",
+      "Billing Errors: Capture estimated savings and credit amounts by account and month",
+      "Inactive Accounts: Identify and manage inactive meters with no activity for 12 consecutive months",
+      "Data Errors: Field verification for ProdView wells/batteries to improve cost and consumption allocation accuracy",
+      "Task Tracker: Flag accounts for review, categorize tasks, and assign them with direct email notifications",
+      "Offline capabilities for field use in areas without cell service"
     ],
     techStack: [
       "SQL Server",
       "Power Apps",
       "Azure",
     ],
-  },
+  },  
   {
     id: 4,
     title: "iPig Machine Learning",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Used Google Cloud Vision API to develop a machine learning model based on field images to identify areas with high paraffin levels and corrosion, enabling effective monitoring and treatment scheduling.",
     image: "/images/projects/project4.png",
@@ -116,6 +128,7 @@ const projectData: Project[] = [
     title: "Pigging Economic Calculator",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a calculator to estimate the economic impact of pigging activities, optimizing costs and improving decision-making processes.",
     image: "/images/projects/project5.png",
@@ -145,6 +158,7 @@ const projectData: Project[] = [
     title: "Mercury Partitioning Calculator",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a calculator to model mercury partitioning in gas condensate systems using modern equations of state.",
     image: "/images/projects/project6.png",
@@ -172,6 +186,7 @@ const projectData: Project[] = [
     title: "H₂S Economic Model",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a model to evaluate the economic impact of different H₂S treatment strategies, optimizing for cost and efficiency.",
     image: "/images/projects/project7.png",
@@ -199,6 +214,7 @@ const projectData: Project[] = [
     title: "Produced Water Model",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a model to understand the behavior of produced water in oil and gas operations, improving water management practices.",
     image: "/images/projects/project8.png",
@@ -226,6 +242,7 @@ const projectData: Project[] = [
     title: "Data Historian: Canary",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a system to open-source internal live streaming data to engineers, enhancing data accessibility and analysis.",
     image: "/images/projects/project9.png",
@@ -254,6 +271,7 @@ const projectData: Project[] = [
     title: "Completions Tag Normalization",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Devised a multi-tier classification method to filter and normalize completion tags, improving data consistency and enabling better analytics.",
     image: "/images/projects/project10.png",
@@ -281,6 +299,7 @@ const projectData: Project[] = [
     title: "Automated Batch Treatment",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Implemented dynamic scheduling for treatment frequency and volume optimization using in-house app based on well production and temperature. Resulted in significant cost reduction and improved planning processes.",
     image: "/images/projects/project11.png",
@@ -310,6 +329,7 @@ const projectData: Project[] = [
     title: "Permian Basin Production Model",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Built a model to forecast production and predict type curves in Permian Basin using publicly available, open-sourced data for over 12,000 wells.",
     image: "/images/projects/project12.png",
@@ -337,6 +357,7 @@ const projectData: Project[] = [
     title: "Profitability Analysis",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Transitioned EFS Tiering to Profitability/LOE metrics as opposed to actual oil production, providing a more accurate measure of economic performance.",
     image: "/images/projects/project13.png",
@@ -365,6 +386,7 @@ const projectData: Project[] = [
     title: "Carbon Intensities in GOM and Permian Basin",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a log-normal distribution algorithm to analyze historical data from EPA, EIA, and BOEM, providing insights into carbon intensities.",
     image: "/images/projects/project14.png",
@@ -396,6 +418,7 @@ const projectData: Project[] = [
     title: "Scope-3 Emissions",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a model to analyze and reduce scope-3 emissions across various travel and accommodation categories, enhancing sustainability efforts.",
     image: "/images/projects/project15.png",
@@ -427,6 +450,7 @@ const projectData: Project[] = [
     title: "Environmental Reporting App",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Created an app for comprehensive environmental reporting, including fuel usage, emissions tracking, and compliance monitoring.",
     image: "/images/projects/project16.png",
@@ -457,6 +481,7 @@ const projectData: Project[] = [
     title: "D&I Timeseries Analysis",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Conducted a timeseries analysis of diversity and inclusion metrics by department, providing insights into organizational diversity trends.",
     image: "/images/projects/project17.png",
@@ -485,6 +510,7 @@ const projectData: Project[] = [
     title: "mLabs",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a centralized content-management portal for cross-discipline, cross-functional solutions organized by different business units.",
     image: "/images/projects/project18.png",
@@ -513,6 +539,7 @@ const projectData: Project[] = [
     title: "KosGo",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Developed a dedicated server and real-time data search engine for daily data crawling, enhancing data accessibility and search capabilities.",
     image: "/images/projects/project19.png",
@@ -544,6 +571,7 @@ const projectData: Project[] = [
     title: "Production Report",
     problem:"",
     duration:"",
+    link: "",
     paragraph:
       "Created a daily production performance report system integrating SQL Server, P2, and Spotfire for comprehensive data analysis and reporting.",
     image: "/images/projects/project20.png",
@@ -574,6 +602,7 @@ const projectData: Project[] = [
     title: "COVID-19 Tracker",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Effectively manage COVID-19 risks without impacting production/revenue or compromising employee safety.",
     image: "/images/projects/project21.png",
     cover: "/images/insights/7244701_18704.jpg",
@@ -601,6 +630,7 @@ const projectData: Project[] = [
     title: "Historical Data Normalization",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Filling missing production data to improve accuracy and efficiency in historical data analysis.",
     image: "/images/projects/project22.png",
     cover: "/images/projects/134032.jpg",
@@ -629,6 +659,7 @@ const projectData: Project[] = [
     title: "Decline Curve Analysis",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Analyzing decline curves to predict the lifetime production of wells.",
     image: "/images/projects/project23.png",
     cover: "/images/projects/pexels-goumbik-590022.jpg",
@@ -657,6 +688,7 @@ const projectData: Project[] = [
     title: "Well Data Extraction",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Extracting and organizing well data to improve accessibility and analysis.",
     image: "/images/projects/project24.png",
     cover: "/images/projects/19224.jpg",
@@ -683,6 +715,7 @@ const projectData: Project[] = [
     title: "Global Downtime Report",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Providing consistent global visualization of nonproductive time data to identify areas of concern and improve operational downtime.",
     image: "/images/projects/project25.png",
     cover: "/images/projects/pexels-anna-nekrashevich-6801648.jpg",
@@ -709,6 +742,7 @@ const projectData: Project[] = [
     title: "OPEX Tracker",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Real-time field OPEX tracking to understand estimated $/BOE at a given moment in time.",
     image: "/images/projects/project26.png",
     cover: "/images/projects/project-04.jpg",
@@ -736,6 +770,7 @@ const projectData: Project[] = [
     title: "CAPEX Accountability App",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Providing a comprehensive view of capital expenditure to ensure accountability and optimize budget management.",
     image: "/images/projects/project27.png",
     cover: "/images/results/pexels-pixabay-220301.jpg",
@@ -763,6 +798,7 @@ const projectData: Project[] = [
     title: "Clarity Project Management",
     problem:"",
     duration:"",
+    link: "",
     paragraph: "Enhancing project management by providing clear dashboards and tracking tools.",
     image: "/images/projects/project28.png",
     cover: "/images/projects/pexels-fauxels-3183153.jpg",
