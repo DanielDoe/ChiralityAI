@@ -23,7 +23,6 @@ const AboutPage = () => {
       <AboutTabs />
       <TeamSection />
       <AboutSectionOne />
-      <ContactSection />
     </>
   );
 };

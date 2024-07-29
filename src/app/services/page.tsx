@@ -128,7 +128,6 @@ const ServicePage = () => {
           </ul>
         </div>
       </section>
-      <WhyUsSection />
       <ContactSection />
     </>
   );
