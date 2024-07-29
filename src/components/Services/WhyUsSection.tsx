@@ -41,7 +41,7 @@ const WhyUsSection = () => {
                   We&apos;re constantly pushing the boundaries
                 </h3>
                 <p className="mt-4 text-left text-base leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg lg:text-xl">
-                  At ChiralityAI, we’re committed to delivering excellence
+                  At Chirality Research Inc., we’re committed to delivering excellence
                   across various industries. With our state-of-the-art
                   technology and advanced processes, we’re able to provide
                   innovative solutions to meet the evolving needs of our clients
