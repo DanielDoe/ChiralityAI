@@ -32,9 +32,9 @@ const teamMembers = [
     image: "/images/team/tony.png",
   },
   {
-    name: "John Doe",
+    name: "Scott Tran",
     position: "Product Designer",
-    image: "/images/team/van.png",
+    image: "/images/team/scott.jpg",
   },
 ];
 
